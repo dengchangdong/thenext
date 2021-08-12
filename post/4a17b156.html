@@ -9,7 +9,7 @@
     
 <link rel="stylesheet" href="/assets/css/style.min.css">
 
-	<script src="/assets/js/jquery-3.4.1.min.js"></script>
+	<script src="//cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 	<script async src="/assets/js/main.js"></script>
 <meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="懒人杂记" type="application/atom+xml">
 <link rel="alternate" href="/rss2.xml" title="懒人杂记" type="application/rss+xml">
@@ -107,6 +107,12 @@
 		 
     </footer>
 </article>
+
+
+<div class="comments">
+<div id="disqus_thread"></div>
+</div>
+
         </main>
         
 <footer class="footer">
@@ -127,5 +133,14 @@
 
 <span class="cover"></span>
 <span class="backtop" style="display: none;"><i class="icon-backtop genericons"></i></span>
+
+
+<script async src="//cdn.jsdelivr.net/npm/jquery-lazyload@1.9.7/jquery.lazyload.min.js"></script>
+	
+	<script>
+	function loadComment(){let e,n;(e=document.createElement("script")).src="https://cdn.jsdelivr.net/npm/disqusjs@1.3/dist/disqus.js",document.body.appendChild(e),e.onload=()=>{new DisqusJS({shortname:"dengchangdong",siteName:"懒人杂记",api:"https://disqus.thenext.cc/api/",apikey:"3droa2cIO3UZVJhKvfCK8iMCq1Ag6lXTxoX37DatdiwRZm8YjMV0xOFvClO1Ehdh",admin:"dengchangdong",identifier:"post/4a17b156.html",url:"https://www.thenext.cc/post/4a17b156.html",nesting:"2"})},(n=document.createElement("link")).rel="stylesheet",n.href="https://cdn.jsdelivr.net/npm/disqusjs@1.3/dist/disqusjs.css",document.head.appendChild(n)}var runningOnBrowser="undefined"!=typeof window,isBot=runningOnBrowser&&!("onscroll"in window)||"undefined"!=typeof navigator&&/(gle|ing|ro|msn)bot|crawl|spider|yand|duckgo/i.test(navigator.userAgent),supportsIntersectionObserver=runningOnBrowser&&"IntersectionObserver"in window;setTimeout(function(){var n;!isBot&&supportsIntersectionObserver?(n=new IntersectionObserver(function(e){e[0].isIntersecting&&(loadComment(),n.disconnect())},{threshold:[0]})).observe(document.getElementById("disqus_thread")):loadComment()},1)
+	</script>
+	
+
     </body>
 </html>

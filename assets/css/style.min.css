@@ -261,7 +261,7 @@ ul, ol {
 .container, .footer {
     margin: auto;
 }
-.archives, .posts, .tagcloud, .single, .pagination {
+.archives, .posts, .tagcloud, .single, .pagination, .comments {
     background-color: #fff;
 }
 .nav ul, .tagcloud ul {
@@ -625,25 +625,25 @@ ul, ol {
 >>> 代码高亮:
 --------------------------------------------------------------*/
 .highlight {
-    width: 100%;
-    overflow: auto;
     margin: 20px 0!important;
     padding: 0;
-    border-radius: 3px;
+    width: 100%;
+    overflow-x: auto;
     font-size: 13px;
     line-height: 1.6;
     color: #c9d1d9;
+    border-radius: 3px;
     background-color: #0d1117;
 }
-.highlight table{
-    display: block;
-    overflow: auto;
+.highlight table {
+    display: table;
     width: 100%;
     margin: 0;
 }
 .highlight table td, .highlight table th, .highlight table tr {
-    border: 0px;
-    padding: 0px;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 .highlight .gutter {
     -webkit-user-select: none;
@@ -661,11 +661,6 @@ ul, ol {
     padding-right: 10px;
     color: #869194;
     text-align: right;
-}
-.highlight .code pre {
-    width: 100%;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 .highlight .gutter .line {
     height: 20px;
@@ -757,8 +752,11 @@ ul, ol {
     .footer {
         margin-bottom: 50px;
     }
-    .archives, .posts, .tagcloud, .single, .pagination {
+    .archives, .posts, .tagcloud, .single, .pagination, .comments {
         padding: 40px;
+    }
+    .comments {
+        padding-top: 0;
     }
     /* 页首 */
     .menu-button {
@@ -881,7 +879,6 @@ ul, ol {
     }
 }
 @media screen and (max-width: 768px) {
-    /* 全局 */
     /* 通用 */
     .showMenu, .showSearch {
         overflow: hidden;
@@ -889,9 +886,12 @@ ul, ol {
     .container {
         margin-top: 70px;
     }
-    .archives, .posts, .tagcloud, .single, .pagination {
+    .archives, .posts, .tagcloud, .single, .pagination, .comments {
         padding: 15px;
         margin: auto 10px;
+    }
+    .comments {
+        padding-top: 0;
     }
     .footer {
         margin: 20px auto;
