@@ -1,100 +1,95 @@
 <?xml version="1.0" encoding="utf-8"?>
-<search>
-  <entry>
-    <title>HTML5应用未来发展趋势如何？</title>
-    <url>/post/4a17b156.html</url>
-    <content><![CDATA[<p>HTML5是前端技术中非常重要的内容，尤其在微信小程序的爆发之后，HTML5技术成为前端工程师必备的技术。关于HTML5是否好学，这个并没有确定的答案，需要根据学习者对于新知识接受能力以及相关技术基础而决定的。但是如果与后台编程技术相比，HTML5难度要小一些，也相对更容易入门。接下来，我们一起来分析一下HTML5有哪些特性及未来发展前景。</p>
-<h2 id="HTML5是什么"><a href="#HTML5是什么" class="headerlink" title="HTML5是什么?"></a>HTML5是什么?</h2><p>HTML5是构建web内容的一种语言描述方式，在之前的HTML4.01版本基础上进一步改进。新增加了多个标签元素，也去除了一些原来HTML标准的标签。HTML5允许程序通过Web浏览器运行，并且将视频等目前需要插件和其他平台才能使用的多媒体内容也纳入其中，这使浏览器成为一种通用的平台，用户通过浏览器就能完成任务。</p>
-<p>在这里小编建了一个前端学习交流扣扣群：132667127，我自己整理的最新的前端资料和高级开发教程，如果有想需要的，可以加群一起学习交流</p>
-<h2 id="HTML5有哪些新特性"><a href="#HTML5有哪些新特性" class="headerlink" title="HTML5有哪些新特性?"></a>HTML5有哪些新特性?</h2><p>HTML5将Web带入一个成熟的应用平台，在这个平台上，视频、音频、图像、动画以及设备的交互都进行了规范、新特性包括：智能表单、绘图画布、多媒体、地理定位、数据存储、多线程。</p>
-<p>HTML5的应用未来发展趋势如何?</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo generate<br>$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>随着计算机技术的不断发展，未来几年内HTML5依旧会持续增长，具体的应用方向与发展趋势有：</p>
-<h3 id="1-HTML5技术的移动端方向。"><a href="#1-HTML5技术的移动端方向。" class="headerlink" title="1. HTML5技术的移动端方向。"></a>1. HTML5技术的移动端方向。</h3><p>HTML5技术在未来主要发展的市场还是在移动端互联网领域，现阶段移动浏览器有应用体验不佳、网页标准不统一的劣势，这两个方面是移动端网页发展的障碍，而HTML5技术能够解决这两个问题，并且将劣势转化为优势，整体推动整个移动端网页方面的发展;</p>
-<h3 id="2-Web内核标准提升。"><a href="#2-Web内核标准提升。" class="headerlink" title="2. Web内核标准提升。"></a>2. Web内核标准提升。</h3><p>目前移动端网页内核大多采用Web内核，相信在未来几年内随着智能端逐渐普及，HTML5在Web内核方面应用将会得到极大的凸显;</p>
-<h3 id="3-提升Web操作体验。"><a href="#3-提升Web操作体验。" class="headerlink" title="3. 提升Web操作体验。"></a>3. 提升Web操作体验。</h3><p>随着硬件能力的提升、WebGL标准化的普及以及手机页游的逐渐成熟，手机页游向3D化发展是大势所趋;</p>
-<h3 id="4-网络营销游戏化发展。"><a href="#4-网络营销游戏化发展。" class="headerlink" title="4. 网络营销游戏化发展。"></a>4. 网络营销游戏化发展。</h3><p>通过一些游戏化、场景化以及跨屏互动等环节，不仅增加用户游戏体验，还能够满足广告主大部分的营销需求，在推销产品的过程中，让用户体验游戏的乐趣;</p>
-<h3 id="5-移动视频、在线直播。"><a href="#5-移动视频、在线直播。" class="headerlink" title="5. 移动视频、在线直播。"></a>5. 移动视频、在线直播。</h3><p>HTML5将会改变视频数据的传输方式，让视频播放更加流畅，与此同时，视频还能够与网页相结合，让用户看视频如看图片一样轻松。</p>
-<p>因此，如果能充分掌握HTML5技术，在未来前端职业发展过程中，必定会有长足的发展。对于任何一门新的技术而言，最艰难的就是逐渐认知的阶段。一旦能够入门，之后的学习路径将会非常的轻松。目前移动互联网已经成为人们日常生活中不可或缺的一部分，因此学习Web前端与移动开发是非常符合未来趋势的。</p>
-]]></content>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>前端</tag>
-        <tag>就业</tag>
-        <tag>互联网</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Go 死码消除与调试(debug)模式</title>
-    <url>/post/1ac6cf5e.html</url>
-    <content><![CDATA[<p>因此，如果能充分掌握<code>HTML5</code>技术，在未来前端职业发展过程中，必定会有长足的发展。对于任何一门新的技术而言，最艰难的就是逐渐认知的阶段。</p>
-<p>HTML5是前端技术中非常重要的内容，尤其在微信小程序的爆发之后，HTML5<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>技术成为前端工程师必备的技术。关于HTML5是否好学，这个并没有确定的答案，需要根据学习者对于新知识接受能力以及相关技术基础而决定的。但是如果与后台编程技术相比，HTML5难度要小一些，也相对更容易入门。接下来，我们一起来分析一下HTML5有哪些特性及未来发展前景。</p>
-<h2 id="HTML5是什么"><a href="#HTML5是什么" class="headerlink" title="HTML5是什么?"></a>HTML5是什么?</h2><blockquote>
-<p>HTML5是构建web内容的一种语言描述方式，在之前的HTML4.01版本基础上进一步改进。新增加了多个标签元素，也去除了一些原来HTML标准的标签。HTML5允许程序通过Web浏览器运行，并且将视频等目前需要插件和其他平台才能使用的多媒体内容也纳入其中，这使浏览器成为一种通用的平台，用户通过浏览器就能完成任务。</p>
-</blockquote>
-<p>在这里小编建了一个前端学习交流扣扣群：132667127，我自己整理的最新的前端资料和高级开发教程，如果有想需要的，可以加群一起学习交流</p>
-<h2 id="HTML5有哪些新特性"><a href="#HTML5有哪些新特性" class="headerlink" title="HTML5有哪些新特性?"></a>HTML5有哪些新特性?</h2><p>HTML5将Web带入一个成熟的应用平台，在这个平台上，视频、音频、图像、动画以及设备的交互都进行了规范、新特性包括：智能表单、绘图画布、多媒体、地理定位、数据存储、多线程。</p>
-<p>HTML5的应用未来发展趋势如何?</p>
-<figure class="highlight html"><table><tr><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;popup search-popup local-search-popup&quot;</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;local-search-header clearfix&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;search-icon&quot;</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-search&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;popup-btn-close&quot;</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-times-circle&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;local-search-input-wrapper&quot;</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">autocomplete</span>=<span class="hljs-string">&quot;off&quot;</span></span><br><span class="hljs-tag">             <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;&#123;&#123; __(&#x27;search.placeholder&#x27;) &#125;&#125;&quot;</span> <span class="hljs-attr">spellcheck</span>=<span class="hljs-string">&quot;false&quot;</span></span><br><span class="hljs-tag">             <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;local-search-input&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;local-search-result&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br></code></pre></td></tr></table></figure>
-
-<p>随着计算机技术的不断发展，未来几年内HTML5依旧会持续增长，具体的应用方向与发展趋势有：</p>
-<h3 id="1-HTML5技术的移动端方向。"><a href="#1-HTML5技术的移动端方向。" class="headerlink" title="1. HTML5技术的移动端方向。"></a>1. HTML5技术的移动端方向。</h3><p>HTML5技术在未来主要发展的市场还是在移动端互联网领域，现阶段移动浏览器有应用体验不佳、网页标准不统一的劣势，这两个方面是移动端网页发展的障碍，而HTML5技术能够解决这两个问题，并且将劣势转化为优势，整体推动整个移动端网页方面的发展;</p>
-<h3 id="2-Web内核标准提升。"><a href="#2-Web内核标准提升。" class="headerlink" title="2. Web内核标准提升。"></a>2. Web内核标准提升。</h3><p>目前移动端网页内核大多采用Web内核，相信在未来几年内随着智能端逐渐普及，HTML5在Web内核方面应用将会得到极大的凸显;</p>
-<h3 id="3-提升Web操作体验。"><a href="#3-提升Web操作体验。" class="headerlink" title="3. 提升Web操作体验。"></a>3. 提升Web操作体验。</h3><p>随着硬件能力的提升、WebGL标准化的普及以及手机页游的逐渐成熟，手机页游向3D化发展是大势所趋;</p>
-<h3 id="4-网络营销游戏化发展。"><a href="#4-网络营销游戏化发展。" class="headerlink" title="4. 网络营销游戏化发展。"></a>4. 网络营销游戏化发展。</h3><p>通过一些游戏化、场景化以及跨屏互动等环节，不仅增加用户游戏体验，还能够满足广告主大部分的营销需求，在推销产品的过程中，让用户体验游戏的乐趣;</p>
-<h3 id="5-移动视频、在线直播。"><a href="#5-移动视频、在线直播。" class="headerlink" title="5. 移动视频、在线直播。"></a>5. 移动视频、在线直播。</h3><p>HTML5将会改变视频数据的传输方式，让视频播放更加流畅，与此同时，视频还能够与网页相结合，让用户看视频如看图片一样轻松。</p>
-<p>因此，如果能充分掌握HTML5技术，在未来前端职业发展过程中，必定会有长足的发展。对于任何一门新的技术而言，最艰难的就是逐渐认知的阶段。一旦能够入门，之后的学习路径将会非常的轻松。目前移动互联网已经成为人们日常生活中不可或缺的一部分，因此学习Web前端与移动开发是非常符合未来趋势的。</p>
-<div class="footnotes" role="doc-endnotes"><ol><li id="fn:1">智能表单、绘图画布、多媒体、地理定位、数据存储、多线程。<a href="#fnref:1" class="footnote-backref" rev="footnote"><i class="icon-back genericons"></i></a></li></ol></div>]]></content>
-      <tags>
-        <tag>HTML5</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>HTML5技术成为前端工程师必备的技术</title>
-    <url>/post/136cf21b.html</url>
-    <content><![CDATA[<p>HTML5是前端技术中非常重要的内容，尤其在微信小程序的爆发之后，HTML5技术成为前端工程师必备的技术。关于HTML5是否好学，这个并没有确定的答案，需要根据学习者对于新知识接受能力以及相关技术基础而决定的。但是如果与后台编程技术相比，HTML5难度要小一些，也相对更容易入门。接下来，我们一起来分析一下HTML5有哪些特性及未来发展前景。</p>
-<h2 id="HTML5是什么"><a href="#HTML5是什么" class="headerlink" title="HTML5是什么?"></a>HTML5是什么?</h2><p>HTML5是构建web内容的一种语言描述方式，在之前的HTML4.01版本基础上进一步改进。新增加了多个标签元素，也去除了一些原来HTML标准的标签。HTML5允许程序通过Web浏览器运行，并且将视频等目前需要插件和其他平台才能使用的多媒体内容也纳入其中，这使浏览器成为一种通用的平台，用户通过浏览器就能完成任务。</p>
-<p>在这里小编建了一个前端学习交流扣扣群：132667127，我自己整理的最新的前端资料和高级开发教程，如果有想需要的，可以加群一起学习交流</p>
-<h2 id="HTML5有哪些新特性"><a href="#HTML5有哪些新特性" class="headerlink" title="HTML5有哪些新特性?"></a>HTML5有哪些新特性?</h2><p>HTML5将Web带入一个成熟的应用平台，在这个平台上，视频、音频、图像、动画以及设备的交互都进行了规范、新特性包括：智能表单、绘图画布、多媒体、地理定位、数据存储、多线程。</p>
-<p>HTML5的应用未来发展趋势如何?</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo generate<br>$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>随着计算机技术的不断发展，未来几年内HTML5依旧会持续增长，具体的应用方向与发展趋势有：</p>
-<h3 id="1-HTML5技术的移动端方向。"><a href="#1-HTML5技术的移动端方向。" class="headerlink" title="1. HTML5技术的移动端方向。"></a>1. HTML5技术的移动端方向。</h3><p>HTML5技术在未来主要发展的市场还是在移动端互联网领域，现阶段移动浏览器有应用体验不佳、网页标准不统一的劣势，这两个方面是移动端网页发展的障碍，而HTML5技术能够解决这两个问题，并且将劣势转化为优势，整体推动整个移动端网页方面的发展;</p>
-<h3 id="2-Web内核标准提升。"><a href="#2-Web内核标准提升。" class="headerlink" title="2. Web内核标准提升。"></a>2. Web内核标准提升。</h3><p>目前移动端网页内核大多采用Web内核，相信在未来几年内随着智能端逐渐普及，HTML5在Web内核方面应用将会得到极大的凸显;</p>
-<h3 id="3-提升Web操作体验。"><a href="#3-提升Web操作体验。" class="headerlink" title="3. 提升Web操作体验。"></a>3. 提升Web操作体验。</h3><p>随着硬件能力的提升、WebGL标准化的普及以及手机页游的逐渐成熟，手机页游向3D化发展是大势所趋;</p>
-<h3 id="4-网络营销游戏化发展。"><a href="#4-网络营销游戏化发展。" class="headerlink" title="4. 网络营销游戏化发展。"></a>4. 网络营销游戏化发展。</h3><p>通过一些游戏化、场景化以及跨屏互动等环节，不仅增加用户游戏体验，还能够满足广告主大部分的营销需求，在推销产品的过程中，让用户体验游戏的乐趣;</p>
-<h3 id="5-移动视频、在线直播。"><a href="#5-移动视频、在线直播。" class="headerlink" title="5. 移动视频、在线直播。"></a>5. 移动视频、在线直播。</h3><p>HTML5将会改变视频数据的传输方式，让视频播放更加流畅，与此同时，视频还能够与网页相结合，让用户看视频如看图片一样轻松。</p>
-<p>因此，如果能充分掌握HTML5技术，在未来前端职业发展过程中，必定会有长足的发展。对于任何一门新的技术而言，最艰难的就是逐渐认知的阶段。一旦能够入门，之后的学习路径将会非常的轻松。目前移动互联网已经成为人们日常生活中不可或缺的一部分，因此学习Web前端与移动开发是非常符合未来趋势的。</p>
-]]></content>
-      <tags>
-        <tag>HTML5</tag>
-        <tag>前端</tag>
-        <tag>就业</tag>
-        <tag>互联网</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>分析一下HTML5有哪些特性</title>
-    <url>/post/a112ae00.html</url>
-    <content><![CDATA[<p>HTML5是前端技术中非常重要的内容，尤其在微信小程序的爆发之后，HTML5技术成为前端工程师必备的技术。关于HTML5是否好学，这个并没有确定的答案，需要根据学习者对于新知识接受能力以及相关技术基础而决定的。但是如果与后台编程技术相比，HTML5难度要小一些，也相对更容易入门。接下来，我们一起来分析一下HTML5有哪些特性及未来发展前景。</p>
-<h2 id="HTML5是什么"><a href="#HTML5是什么" class="headerlink" title="HTML5是什么?"></a>HTML5是什么?</h2><p>HTML5是构建web内容的一种语言描述方式，在之前的HTML4.01版本基础上进一步改进。新增加了多个标签元素，也去除了一些原来HTML标准的标签。HTML5允许程序通过Web浏览器运行，并且将视频等目前需要插件和其他平台才能使用的多媒体内容也纳入其中，这使浏览器成为一种通用的平台，用户通过浏览器就能完成任务。</p>
-<p>在这里小编建了一个前端学习交流扣扣群：132667127，我自己整理的最新的前端资料和高级开发教程，如果有想需要的，可以加群一起学习交流</p>
-<h2 id="HTML5有哪些新特性"><a href="#HTML5有哪些新特性" class="headerlink" title="HTML5有哪些新特性?"></a>HTML5有哪些新特性?</h2><p>HTML5将Web带入一个成熟的应用平台，在这个平台上，视频、音频、图像、动画以及设备的交互都进行了规范、新特性包括：智能表单、绘图画布、多媒体、地理定位、数据存储、多线程。</p>
-<p>HTML5的应用未来发展趋势如何?</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo generate<br>$ hexo deploy<br></code></pre></td></tr></table></figure>
-
-<p>随着计算机技术的不断发展，未来几年内HTML5依旧会持续增长，具体的应用方向与发展趋势有：</p>
-<h3 id="1-HTML5技术的移动端方向。"><a href="#1-HTML5技术的移动端方向。" class="headerlink" title="1. HTML5技术的移动端方向。"></a>1. HTML5技术的移动端方向。</h3><p>HTML5技术在未来主要发展的市场还是在移动端互联网领域，现阶段移动浏览器有应用体验不佳、网页标准不统一的劣势，这两个方面是移动端网页发展的障碍，而HTML5技术能够解决这两个问题，并且将劣势转化为优势，整体推动整个移动端网页方面的发展;</p>
-<h3 id="2-Web内核标准提升。"><a href="#2-Web内核标准提升。" class="headerlink" title="2. Web内核标准提升。"></a>2. Web内核标准提升。</h3><p>目前移动端网页内核大多采用Web内核，相信在未来几年内随着智能端逐渐普及，HTML5在Web内核方面应用将会得到极大的凸显;</p>
-<h3 id="3-提升Web操作体验。"><a href="#3-提升Web操作体验。" class="headerlink" title="3. 提升Web操作体验。"></a>3. 提升Web操作体验。</h3><p>随着硬件能力的提升、WebGL标准化的普及以及手机页游的逐渐成熟，手机页游向3D化发展是大势所趋;</p>
-<h3 id="4-网络营销游戏化发展。"><a href="#4-网络营销游戏化发展。" class="headerlink" title="4. 网络营销游戏化发展。"></a>4. 网络营销游戏化发展。</h3><p>通过一些游戏化、场景化以及跨屏互动等环节，不仅增加用户游戏体验，还能够满足广告主大部分的营销需求，在推销产品的过程中，让用户体验游戏的乐趣;</p>
-<h3 id="5-移动视频、在线直播。"><a href="#5-移动视频、在线直播。" class="headerlink" title="5. 移动视频、在线直播。"></a>5. 移动视频、在线直播。</h3><p>HTML5将会改变视频数据的传输方式，让视频播放更加流畅，与此同时，视频还能够与网页相结合，让用户看视频如看图片一样轻松。</p>
-<p>因此，如果能充分掌握HTML5技术，在未来前端职业发展过程中，必定会有长足的发展。对于任何一门新的技术而言，最艰难的就是逐渐认知的阶段。一旦能够入门，之后的学习路径将会非常的轻松。目前移动互联网已经成为人们日常生活中不可或缺的一部分，因此学习Web前端与移动开发是非常符合未来趋势的。</p>
-]]></content>
-      <tags>
-        <tag>HTML</tag>
-      </tags>
-  </entry>
+<search> 
+  
+  
+    
+    <entry>
+      <title>分析一下HTML5有哪些特性</title>
+      <link href="/post/a112ae00.html"/>
+      <url>/post/a112ae00.html</url>
+      
+        <content type="html"><![CDATA[<p>HTML5是前端技术中非常重要的内容，尤其在微信小程序的爆发之后，HTML5技术成为前端工程师必备的技术。关于HTML5是否好学，这个并没有确定的答案，需要根据学习者对于新知识接受能力以及相关技术基础而决定的。但是如果与后台编程技术相比，HTML5难度要小一些，也相对更容易入门。接下来，我们一起来分析一下HTML5有哪些特性及未来发展前景。</p><h2 id="HTML5是什么"><a href="#HTML5是什么" class="headerlink" title="HTML5是什么?"></a>HTML5是什么?</h2><p>HTML5是构建web内容的一种语言描述方式，在之前的HTML4.01版本基础上进一步改进。新增加了多个标签元素，也去除了一些原来HTML标准的标签。HTML5允许程序通过Web浏览器运行，并且将视频等目前需要插件和其他平台才能使用的多媒体内容也纳入其中，这使浏览器成为一种通用的平台，用户通过浏览器就能完成任务。</p><p>在这里小编建了一个前端学习交流扣扣群：132667127，我自己整理的最新的前端资料和高级开发教程，如果有想需要的，可以加群一起学习交流</p><h2 id="HTML5有哪些新特性"><a href="#HTML5有哪些新特性" class="headerlink" title="HTML5有哪些新特性?"></a>HTML5有哪些新特性?</h2><p>HTML5将Web带入一个成熟的应用平台，在这个平台上，视频、音频、图像、动画以及设备的交互都进行了规范、新特性包括：智能表单、绘图画布、多媒体、地理定位、数据存储、多线程。</p><p>HTML5的应用未来发展趋势如何?</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo generate<br>$ hexo deploy<br></code></pre></td></tr></table></figure><p>随着计算机技术的不断发展，未来几年内HTML5依旧会持续增长，具体的应用方向与发展趋势有：</p><h3 id="1-HTML5技术的移动端方向。"><a href="#1-HTML5技术的移动端方向。" class="headerlink" title="1. HTML5技术的移动端方向。"></a>1. HTML5技术的移动端方向。</h3><p>HTML5技术在未来主要发展的市场还是在移动端互联网领域，现阶段移动浏览器有应用体验不佳、网页标准不统一的劣势，这两个方面是移动端网页发展的障碍，而HTML5技术能够解决这两个问题，并且将劣势转化为优势，整体推动整个移动端网页方面的发展;</p><h3 id="2-Web内核标准提升。"><a href="#2-Web内核标准提升。" class="headerlink" title="2. Web内核标准提升。"></a>2. Web内核标准提升。</h3><p>目前移动端网页内核大多采用Web内核，相信在未来几年内随着智能端逐渐普及，HTML5在Web内核方面应用将会得到极大的凸显;</p><h3 id="3-提升Web操作体验。"><a href="#3-提升Web操作体验。" class="headerlink" title="3. 提升Web操作体验。"></a>3. 提升Web操作体验。</h3><p>随着硬件能力的提升、WebGL标准化的普及以及手机页游的逐渐成熟，手机页游向3D化发展是大势所趋;</p><h3 id="4-网络营销游戏化发展。"><a href="#4-网络营销游戏化发展。" class="headerlink" title="4. 网络营销游戏化发展。"></a>4. 网络营销游戏化发展。</h3><p>通过一些游戏化、场景化以及跨屏互动等环节，不仅增加用户游戏体验，还能够满足广告主大部分的营销需求，在推销产品的过程中，让用户体验游戏的乐趣;</p><h3 id="5-移动视频、在线直播。"><a href="#5-移动视频、在线直播。" class="headerlink" title="5. 移动视频、在线直播。"></a>5. 移动视频、在线直播。</h3><p>HTML5将会改变视频数据的传输方式，让视频播放更加流畅，与此同时，视频还能够与网页相结合，让用户看视频如看图片一样轻松。</p><p>因此，如果能充分掌握HTML5技术，在未来前端职业发展过程中，必定会有长足的发展。对于任何一门新的技术而言，最艰难的就是逐渐认知的阶段。一旦能够入门，之后的学习路径将会非常的轻松。目前移动互联网已经成为人们日常生活中不可或缺的一部分，因此学习Web前端与移动开发是非常符合未来趋势的。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> HTML </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HTML5技术成为前端工程师必备的技术</title>
+      <link href="/post/136cf21b.html"/>
+      <url>/post/136cf21b.html</url>
+      
+        <content type="html"><![CDATA[<p>HTML5是前端技术中非常重要的内容，尤其在微信小程序的爆发之后，HTML5技术成为前端工程师必备的技术。关于HTML5是否好学，这个并没有确定的答案，需要根据学习者对于新知识接受能力以及相关技术基础而决定的。但是如果与后台编程技术相比，HTML5难度要小一些，也相对更容易入门。接下来，我们一起来分析一下HTML5有哪些特性及未来发展前景。</p><h2 id="HTML5是什么"><a href="#HTML5是什么" class="headerlink" title="HTML5是什么?"></a>HTML5是什么?</h2><p>HTML5是构建web内容的一种语言描述方式，在之前的HTML4.01版本基础上进一步改进。新增加了多个标签元素，也去除了一些原来HTML标准的标签。HTML5允许程序通过Web浏览器运行，并且将视频等目前需要插件和其他平台才能使用的多媒体内容也纳入其中，这使浏览器成为一种通用的平台，用户通过浏览器就能完成任务。</p><p>在这里小编建了一个前端学习交流扣扣群：132667127，我自己整理的最新的前端资料和高级开发教程，如果有想需要的，可以加群一起学习交流</p><h2 id="HTML5有哪些新特性"><a href="#HTML5有哪些新特性" class="headerlink" title="HTML5有哪些新特性?"></a>HTML5有哪些新特性?</h2><p>HTML5将Web带入一个成熟的应用平台，在这个平台上，视频、音频、图像、动画以及设备的交互都进行了规范、新特性包括：智能表单、绘图画布、多媒体、地理定位、数据存储、多线程。</p><p>HTML5的应用未来发展趋势如何?</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo generate<br>$ hexo deploy<br></code></pre></td></tr></table></figure><p>随着计算机技术的不断发展，未来几年内HTML5依旧会持续增长，具体的应用方向与发展趋势有：</p><h3 id="1-HTML5技术的移动端方向。"><a href="#1-HTML5技术的移动端方向。" class="headerlink" title="1. HTML5技术的移动端方向。"></a>1. HTML5技术的移动端方向。</h3><p>HTML5技术在未来主要发展的市场还是在移动端互联网领域，现阶段移动浏览器有应用体验不佳、网页标准不统一的劣势，这两个方面是移动端网页发展的障碍，而HTML5技术能够解决这两个问题，并且将劣势转化为优势，整体推动整个移动端网页方面的发展;</p><h3 id="2-Web内核标准提升。"><a href="#2-Web内核标准提升。" class="headerlink" title="2. Web内核标准提升。"></a>2. Web内核标准提升。</h3><p>目前移动端网页内核大多采用Web内核，相信在未来几年内随着智能端逐渐普及，HTML5在Web内核方面应用将会得到极大的凸显;</p><h3 id="3-提升Web操作体验。"><a href="#3-提升Web操作体验。" class="headerlink" title="3. 提升Web操作体验。"></a>3. 提升Web操作体验。</h3><p>随着硬件能力的提升、WebGL标准化的普及以及手机页游的逐渐成熟，手机页游向3D化发展是大势所趋;</p><h3 id="4-网络营销游戏化发展。"><a href="#4-网络营销游戏化发展。" class="headerlink" title="4. 网络营销游戏化发展。"></a>4. 网络营销游戏化发展。</h3><p>通过一些游戏化、场景化以及跨屏互动等环节，不仅增加用户游戏体验，还能够满足广告主大部分的营销需求，在推销产品的过程中，让用户体验游戏的乐趣;</p><h3 id="5-移动视频、在线直播。"><a href="#5-移动视频、在线直播。" class="headerlink" title="5. 移动视频、在线直播。"></a>5. 移动视频、在线直播。</h3><p>HTML5将会改变视频数据的传输方式，让视频播放更加流畅，与此同时，视频还能够与网页相结合，让用户看视频如看图片一样轻松。</p><p>因此，如果能充分掌握HTML5技术，在未来前端职业发展过程中，必定会有长足的发展。对于任何一门新的技术而言，最艰难的就是逐渐认知的阶段。一旦能够入门，之后的学习路径将会非常的轻松。目前移动互联网已经成为人们日常生活中不可或缺的一部分，因此学习Web前端与移动开发是非常符合未来趋势的。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> HTML5 </tag>
+            
+            <tag> 前端 </tag>
+            
+            <tag> 就业 </tag>
+            
+            <tag> 互联网 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>HTML5应用未来发展趋势如何？</title>
+      <link href="/post/4a17b156.html"/>
+      <url>/post/4a17b156.html</url>
+      
+        <content type="html"><![CDATA[<p>HTML5是前端技术中非常重要的内容，尤其在微信小程序的爆发之后，HTML5技术成为前端工程师必备的技术。关于HTML5是否好学，这个并没有确定的答案，需要根据学习者对于新知识接受能力以及相关技术基础而决定的。但是如果与后台编程技术相比，HTML5难度要小一些，也相对更容易入门。接下来，我们一起来分析一下HTML5有哪些特性及未来发展前景。</p><h2 id="HTML5是什么"><a href="#HTML5是什么" class="headerlink" title="HTML5是什么?"></a>HTML5是什么?</h2><p>HTML5是构建web内容的一种语言描述方式，在之前的HTML4.01版本基础上进一步改进。新增加了多个标签元素，也去除了一些原来HTML标准的标签。HTML5允许程序通过Web浏览器运行，并且将视频等目前需要插件和其他平台才能使用的多媒体内容也纳入其中，这使浏览器成为一种通用的平台，用户通过浏览器就能完成任务。</p><p>在这里小编建了一个前端学习交流扣扣群：132667127，我自己整理的最新的前端资料和高级开发教程，如果有想需要的，可以加群一起学习交流</p><h2 id="HTML5有哪些新特性"><a href="#HTML5有哪些新特性" class="headerlink" title="HTML5有哪些新特性?"></a>HTML5有哪些新特性?</h2><p>HTML5将Web带入一个成熟的应用平台，在这个平台上，视频、音频、图像、动画以及设备的交互都进行了规范、新特性包括：智能表单、绘图画布、多媒体、地理定位、数据存储、多线程。</p><p>HTML5的应用未来发展趋势如何?</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br>$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br>$ hexo generate<br>$ hexo deploy<br></code></pre></td></tr></table></figure><p>随着计算机技术的不断发展，未来几年内HTML5依旧会持续增长，具体的应用方向与发展趋势有：</p><h3 id="1-HTML5技术的移动端方向。"><a href="#1-HTML5技术的移动端方向。" class="headerlink" title="1. HTML5技术的移动端方向。"></a>1. HTML5技术的移动端方向。</h3><p>HTML5技术在未来主要发展的市场还是在移动端互联网领域，现阶段移动浏览器有应用体验不佳、网页标准不统一的劣势，这两个方面是移动端网页发展的障碍，而HTML5技术能够解决这两个问题，并且将劣势转化为优势，整体推动整个移动端网页方面的发展;</p><h3 id="2-Web内核标准提升。"><a href="#2-Web内核标准提升。" class="headerlink" title="2. Web内核标准提升。"></a>2. Web内核标准提升。</h3><p>目前移动端网页内核大多采用Web内核，相信在未来几年内随着智能端逐渐普及，HTML5在Web内核方面应用将会得到极大的凸显;</p><h3 id="3-提升Web操作体验。"><a href="#3-提升Web操作体验。" class="headerlink" title="3. 提升Web操作体验。"></a>3. 提升Web操作体验。</h3><p>随着硬件能力的提升、WebGL标准化的普及以及手机页游的逐渐成熟，手机页游向3D化发展是大势所趋;</p><h3 id="4-网络营销游戏化发展。"><a href="#4-网络营销游戏化发展。" class="headerlink" title="4. 网络营销游戏化发展。"></a>4. 网络营销游戏化发展。</h3><p>通过一些游戏化、场景化以及跨屏互动等环节，不仅增加用户游戏体验，还能够满足广告主大部分的营销需求，在推销产品的过程中，让用户体验游戏的乐趣;</p><h3 id="5-移动视频、在线直播。"><a href="#5-移动视频、在线直播。" class="headerlink" title="5. 移动视频、在线直播。"></a>5. 移动视频、在线直播。</h3><p>HTML5将会改变视频数据的传输方式，让视频播放更加流畅，与此同时，视频还能够与网页相结合，让用户看视频如看图片一样轻松。</p><p>因此，如果能充分掌握HTML5技术，在未来前端职业发展过程中，必定会有长足的发展。对于任何一门新的技术而言，最艰难的就是逐渐认知的阶段。一旦能够入门，之后的学习路径将会非常的轻松。目前移动互联网已经成为人们日常生活中不可或缺的一部分，因此学习Web前端与移动开发是非常符合未来趋势的。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> HTML5 </tag>
+            
+            <tag> 前端 </tag>
+            
+            <tag> 就业 </tag>
+            
+            <tag> 互联网 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Go 死码消除与调试(debug)模式</title>
+      <link href="/post/1ac6cf5e.html"/>
+      <url>/post/1ac6cf5e.html</url>
+      
+        <content type="html"><![CDATA[<p>因此，如果能充分掌握<code>HTML5</code>技术，在未来前端职业发展过程中，必定会有长足的发展。对于任何一门新的技术而言，最艰难的就是逐渐认知的阶段。</p><p>HTML5是前端技术中非常重要的内容，尤其在微信小程序的爆发之后，HTML5<sup id="fnref:1"><a href="#fn:1" rel="footnote">1</a></sup>技术成为前端工程师必备的技术。关于HTML5是否好学，这个并没有确定的答案，需要根据学习者对于新知识接受能力以及相关技术基础而决定的。但是如果与后台编程技术相比，HTML5难度要小一些，也相对更容易入门。接下来，我们一起来分析一下HTML5有哪些特性及未来发展前景。</p><h2 id="HTML5是什么"><a href="#HTML5是什么" class="headerlink" title="HTML5是什么?"></a>HTML5是什么?</h2><blockquote><p>HTML5是构建web内容的一种语言描述方式，在之前的HTML4.01版本基础上进一步改进。新增加了多个标签元素，也去除了一些原来HTML标准的标签。HTML5允许程序通过Web浏览器运行，并且将视频等目前需要插件和其他平台才能使用的多媒体内容也纳入其中，这使浏览器成为一种通用的平台，用户通过浏览器就能完成任务。</p></blockquote><p>在这里小编建了一个前端学习交流扣扣群：132667127，我自己整理的最新的前端资料和高级开发教程，如果有想需要的，可以加群一起学习交流</p><h2 id="HTML5有哪些新特性"><a href="#HTML5有哪些新特性" class="headerlink" title="HTML5有哪些新特性?"></a>HTML5有哪些新特性?</h2><p>HTML5将Web带入一个成熟的应用平台，在这个平台上，视频、音频、图像、动画以及设备的交互都进行了规范、新特性包括：智能表单、绘图画布、多媒体、地理定位、数据存储、多线程。</p><p>HTML5的应用未来发展趋势如何?</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><code class="hljs html"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;popup search-popup local-search-popup&quot;</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;local-search-header clearfix&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;search-icon&quot;</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-search&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">span</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;popup-btn-close&quot;</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-name">i</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;fa fa-times-circle&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">i</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">span</span>&gt;</span><br>    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;local-search-input-wrapper&quot;</span>&gt;</span><br>      <span class="hljs-tag">&lt;<span class="hljs-name">input</span> <span class="hljs-attr">autocomplete</span>=<span class="hljs-string">&quot;off&quot;</span></span><br><span class="hljs-tag">             <span class="hljs-attr">placeholder</span>=<span class="hljs-string">&quot;&#123;&#123; __(&#x27;search.placeholder&#x27;) &#125;&#125;&quot;</span> <span class="hljs-attr">spellcheck</span>=<span class="hljs-string">&quot;false&quot;</span></span><br><span class="hljs-tag">             <span class="hljs-attr">type</span>=<span class="hljs-string">&quot;text&quot;</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;local-search-input&quot;</span>&gt;</span><br>    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br>  <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;local-search-result&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br><span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><br></code></pre></td></tr></table></figure><p>随着计算机技术的不断发展，未来几年内HTML5依旧会持续增长，具体的应用方向与发展趋势有：</p><h3 id="1-HTML5技术的移动端方向。"><a href="#1-HTML5技术的移动端方向。" class="headerlink" title="1. HTML5技术的移动端方向。"></a>1. HTML5技术的移动端方向。</h3><p>HTML5技术在未来主要发展的市场还是在移动端互联网领域，现阶段移动浏览器有应用体验不佳、网页标准不统一的劣势，这两个方面是移动端网页发展的障碍，而HTML5技术能够解决这两个问题，并且将劣势转化为优势，整体推动整个移动端网页方面的发展;</p><h3 id="2-Web内核标准提升。"><a href="#2-Web内核标准提升。" class="headerlink" title="2. Web内核标准提升。"></a>2. Web内核标准提升。</h3><p>目前移动端网页内核大多采用Web内核，相信在未来几年内随着智能端逐渐普及，HTML5在Web内核方面应用将会得到极大的凸显;</p><h3 id="3-提升Web操作体验。"><a href="#3-提升Web操作体验。" class="headerlink" title="3. 提升Web操作体验。"></a>3. 提升Web操作体验。</h3><p>随着硬件能力的提升、WebGL标准化的普及以及手机页游的逐渐成熟，手机页游向3D化发展是大势所趋;</p><h3 id="4-网络营销游戏化发展。"><a href="#4-网络营销游戏化发展。" class="headerlink" title="4. 网络营销游戏化发展。"></a>4. 网络营销游戏化发展。</h3><p>通过一些游戏化、场景化以及跨屏互动等环节，不仅增加用户游戏体验，还能够满足广告主大部分的营销需求，在推销产品的过程中，让用户体验游戏的乐趣;</p><h3 id="5-移动视频、在线直播。"><a href="#5-移动视频、在线直播。" class="headerlink" title="5. 移动视频、在线直播。"></a>5. 移动视频、在线直播。</h3><p>HTML5将会改变视频数据的传输方式，让视频播放更加流畅，与此同时，视频还能够与网页相结合，让用户看视频如看图片一样轻松。</p><p>因此，如果能充分掌握HTML5技术，在未来前端职业发展过程中，必定会有长足的发展。对于任何一门新的技术而言，最艰难的就是逐渐认知的阶段。一旦能够入门，之后的学习路径将会非常的轻松。目前移动互联网已经成为人们日常生活中不可或缺的一部分，因此学习Web前端与移动开发是非常符合未来趋势的。</p><div class="footnotes" role="doc-endnotes"><ol><li id="fn:1">智能表单、绘图画布、多媒体、地理定位、数据存储、多线程。<a href="#fnref:1" class="footnote-backref" rev="footnote"><i class="icon-back genericons"></i></a></li></ol></div>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> HTML5 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
 </search>

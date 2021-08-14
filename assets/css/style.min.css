@@ -260,10 +260,10 @@ ul, ol {
 .container, .footer {
     margin: auto;
 }
-.archives, .posts, .tagcloud, .single, .pagination, .comments {
+.archives, .posts, .tagcloud, .single, .pagination, .comments, .search {
     background-color: #fff;
 }
-.nav ul, .tagcloud ul {
+.nav ul, .tagcloud ul, .search ul {
     list-style-type: none;
 }
 /*--------------------------------------------------------------
@@ -317,17 +317,17 @@ ul, ol {
 .posts .post:last-child {
     margin-bottom: 0;
 }
-.post-header {
+.post-header, .search-header {
     position: relative;
 }
-.posts .post-title {
+.posts .post-title, .search-result-title {
     font-size: 18px;
 }
 .posts .post-date, .single .post-meta {
     font-size: 13px;
     color: #999;
 }
-.posts .post-excerpt {
+.posts .post-excerpt, .search .search-result {
     font-size: 14px;
     color: #666;
 }
@@ -354,7 +354,7 @@ ul, ol {
 /*--------------------------------------------------------------
 >>> 单页:
 --------------------------------------------------------------*/
-.single .post-header {
+.single .post-header, .search-header {
     text-align: center;
     background-color: #f5f7f9;
 }
@@ -391,6 +391,10 @@ ul, ol {
     padding: 10px;
     border: 1px solid #eee;
 }
+.post-content sup {
+    margin-left: 3px;
+    margin-right: 5px;
+}
 .post-content sup a:before {
     content: "[";
 }
@@ -398,7 +402,8 @@ ul, ol {
     content: "]";
 }
 .post-content p code {
-    padding: 2px 6px;
+    padding: 2px 5px;
+    margin: 0 3px;
     font-size: 14px;
     color: #5badf0;
     background-color: #eee;
@@ -548,6 +553,38 @@ ul, ol {
     margin-left: 3px;
 }
 /*--------------------------------------------------------------
+>>> 搜索:
+--------------------------------------------------------------*/
+.search .st-search-input {
+    padding: 10px 15px 10px 50px;
+    width: 80%;
+    font-size: 18px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 2px 5px 1px rgb(64 60 67 / 16%);
+}
+.search .icon-search {
+    position: absolute;
+    left: 10%;
+    top: 5px;
+    font-size: 18px;
+    color: #bbb;
+    margin-left: 20px;
+}
+.search-result-title {
+    display: block;
+    font-weight: 600;
+}
+.search-keyword {
+    color: red;
+    font-weight: 600;
+    font-style: normal;
+}
+.search ul li:last-child {
+    margin-bottom: 0;
+}
+/*--------------------------------------------------------------
 >>> 页脚:
 --------------------------------------------------------------*/
 .footer p {
@@ -612,7 +649,7 @@ ul, ol {
     user-select: none;
 }
 .highlight pre {
-    border: none;
+    border: 0 none;
     margin: 0;
     padding: 10px;
 }
@@ -721,7 +758,7 @@ ul, ol {
     .footer {
         margin-bottom: 50px;
     }
-    .archives, .posts, .tagcloud, .single, .pagination, .comments {
+    .archives, .posts, .tagcloud, .single, .pagination, .comments, .search {
         padding: 40px;
     }
     .comments {
@@ -788,10 +825,10 @@ ul, ol {
         margin-bottom: 40px;
     }
     /* 存档 */
-    .posts .post, .archives ul {
+    .posts .post, .archives ul, .search ul li {
         margin-bottom: 40px;
     }
-    .posts .post-header {
+    .posts .post-header, .search-result-title {
         margin-bottom: 15px;
     }
     .posts .post-title {
@@ -832,7 +869,7 @@ ul, ol {
         transform: scaleX(1);
     }
     /* 单页 */
-    .single .post-header {
+    .single .post-header, .search-header {
         margin: -40px -40px 40px -40px;
         padding-bottom: 40px;
     }
@@ -856,7 +893,7 @@ ul, ol {
     .container {
         margin-top: 70px;
     }
-    .archives, .posts, .tagcloud, .single, .pagination, .comments {
+    .archives, .posts, .tagcloud, .single, .pagination, .comments, .search {
         padding: 15px;
         margin: auto 10px;
     }
@@ -951,15 +988,20 @@ ul, ol {
         margin-bottom: 20px;
     }
     /* 存档 */
-    .posts .post, .archives ul {
+    .posts .post, .archives ul, .search ul li {
         margin-bottom: 25px;
     }
-    .posts .post-header {
+    .posts .post-header, .search-result-title {
         margin-bottom: 10px;
     }
-    /* 分页 */
+    .archives ul li a {
+        display: inline-flex;
+        width: calc(100% - 78px);
+        white-space: nowrap;
+        overflow: hidden;
+    }
     /* 单页 */
-    .single .post-header {
+    .single .post-header, .search-header {
         margin: -15px -15px 15px -15px;
         padding-bottom: 20px;
     }
