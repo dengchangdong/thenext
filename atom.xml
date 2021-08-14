@@ -6,7 +6,7 @@
   <link href="https://www.thenext.cc/atom.xml" rel="self"/>
   
   <link href="https://www.thenext.cc/"/>
-  <updated>2021-08-07T00:57:52.248Z</updated>
+  <updated>2021-08-14T02:11:23.714Z</updated>
   <id>https://www.thenext.cc/</id>
   
   <author>
@@ -17,92 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>分析一下HTML5有哪些特性</title>
-    <link href="https://www.thenext.cc/post/a112ae00.html"/>
-    <id>https://www.thenext.cc/post/a112ae00.html</id>
-    <published>2021-08-07T00:57:32.098Z</published>
-    <updated>2021-08-07T00:57:52.248Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;HTML5是前端技术中非常重要的内容，尤其在微信小程序的爆发之后，HTML5技术成为前端工程师必备的技术。关于HTML5是否好学，这个并没有确定的答案，需要根据学习者对于新知识接受能力以及相关技术基础而决定的。但是如果与后台编程技术相比，HTML5难度要小一些，也相对更容易</summary>
-        
-      
-    
-    
-    
-    
-    <category term="HTML" scheme="https://www.thenext.cc/tags/HTML/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML5技术成为前端工程师必备的技术</title>
-    <link href="https://www.thenext.cc/post/136cf21b.html"/>
-    <id>https://www.thenext.cc/post/136cf21b.html</id>
-    <published>2021-08-07T00:56:49.444Z</published>
-    <updated>2021-08-07T00:57:15.429Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;HTML5是前端技术中非常重要的内容，尤其在微信小程序的爆发之后，HTML5技术成为前端工程师必备的技术。关于HTML5是否好学，这个并没有确定的答案，需要根据学习者对于新知识接受能力以及相关技术基础而决定的。但是如果与后台编程技术相比，HTML5难度要小一些，也相对更容易</summary>
-        
-      
-    
-    
-    
-    
-    <category term="HTML5" scheme="https://www.thenext.cc/tags/HTML5/"/>
-    
-    <category term="前端" scheme="https://www.thenext.cc/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="就业" scheme="https://www.thenext.cc/tags/%E5%B0%B1%E4%B8%9A/"/>
-    
-    <category term="互联网" scheme="https://www.thenext.cc/tags/%E4%BA%92%E8%81%94%E7%BD%91/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>HTML5应用未来发展趋势如何？</title>
-    <link href="https://www.thenext.cc/post/4a17b156.html"/>
-    <id>https://www.thenext.cc/post/4a17b156.html</id>
-    <published>2021-05-29T03:39:12.201Z</published>
-    <updated>2021-08-03T10:38:20.518Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;p&gt;HTML5是前端技术中非常重要的内容，尤其在微信小程序的爆发之后，HTML5技术成为前端工程师必备的技术。关于HTML5是否好学，这个并没有确定的答案，需要根据学习者对于新知识接受能力以及相关技术基础而决定的。但是如果与后台编程技术相比，HTML5难度要小一些，也相对更容易</summary>
-        
-      
-    
-    
-    
-    
-    <category term="HTML5" scheme="https://www.thenext.cc/tags/HTML5/"/>
-    
-    <category term="前端" scheme="https://www.thenext.cc/tags/%E5%89%8D%E7%AB%AF/"/>
-    
-    <category term="就业" scheme="https://www.thenext.cc/tags/%E5%B0%B1%E4%B8%9A/"/>
-    
-    <category term="互联网" scheme="https://www.thenext.cc/tags/%E4%BA%92%E8%81%94%E7%BD%91/"/>
-    
-  </entry>
-  
-  <entry>
     <title>Go 死码消除与调试(debug)模式</title>
     <link href="https://www.thenext.cc/post/1ac6cf5e.html"/>
     <id>https://www.thenext.cc/post/1ac6cf5e.html</id>
-    <published>2013-11-05T22:40:12.000Z</published>
-    <updated>2021-08-12T13:31:06.329Z</updated>
+    <published>2021-08-06T14:10:11.406Z</published>
+    <updated>2021-08-14T02:11:23.714Z</updated>
     
     
       
@@ -118,6 +37,10 @@
     
     
     <category term="HTML5" scheme="https://www.thenext.cc/tags/HTML5/"/>
+    
+    <category term="前端" scheme="https://www.thenext.cc/tags/%E5%89%8D%E7%AB%AF/"/>
+    
+    <category term="互联网" scheme="https://www.thenext.cc/tags/%E4%BA%92%E8%81%94%E7%BD%91/"/>
     
   </entry>
   

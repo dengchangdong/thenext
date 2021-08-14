@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://www.thenext.cc/post/1ac6cf5e.html</loc>
+    
+    <lastmod>2021-08-14</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://www.thenext.cc/404.html</loc>
     
     <lastmod>2021-08-14</lastmod>
@@ -30,37 +37,9 @@
   </url>
   
   <url>
-    <loc>https://www.thenext.cc/post/1ac6cf5e.html</loc>
-    
-    <lastmod>2021-08-12</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>https://www.thenext.cc/tags.html</loc>
     
     <lastmod>2021-08-07</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.thenext.cc/post/a112ae00.html</loc>
-    
-    <lastmod>2021-08-07</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.thenext.cc/post/136cf21b.html</loc>
-    
-    <lastmod>2021-08-07</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>https://www.thenext.cc/post/4a17b156.html</loc>
-    
-    <lastmod>2021-08-03</lastmod>
     
   </url>
   
@@ -88,21 +67,7 @@
   </url>
   
   <url>
-    <loc>https://www.thenext.cc/tags/%E5%B0%B1%E4%B8%9A/</loc>
-    <lastmod>2021-08-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://www.thenext.cc/tags/%E4%BA%92%E8%81%94%E7%BD%91/</loc>
-    <lastmod>2021-08-14</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://www.thenext.cc/tags/HTML/</loc>
     <lastmod>2021-08-14</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
