@@ -1,14 +1,16 @@
-<!DOCTYPE html><html lang="zh-CN"><head>
+<!DOCTYPE html>
+<html  lang="zh-CN" >
+    <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     
     <title>懒人杂记</title>
-    <meta name="applicable-device" content="pc, mobile">
+    <meta name="applicable-device" content="pc, mobile"/>
     
 <link rel="stylesheet" href="/assets/css/style.min.css">
 
 	<script src="//cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
-	<script async="" src="/assets/js/main.js"></script>
+	<script async src="/assets/js/main.js"></script>
 <meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/atom.xml" title="懒人杂记" type="application/atom+xml">
 <link rel="alternate" href="/rss2.xml" title="懒人杂记" type="application/rss+xml">
 </head>
@@ -16,12 +18,12 @@
     <body>
         <header class="header">
     
-        <h1 class="site-title"><a href="/" title="懒人杂记"><img src="/assets/images/logo.png" alt="logo"></a></h1>
+        <h1 class="site-title"><a href="/" title="懒人杂记"><img src="/assets/images/loading.gif" data-original="/assets/images/logo.png" alt="logo"></a></h1>
     
     <form class="search-form" action="/search.html">
         <span class="search-button"><i class="icon-search genericons"></i></span>
         <div class="search-text">
-            <input name="q" class="search-input" type="text" id="search-input" placeholder="搜索...">
+            <input name="q" class="search-input" type="text" id="search-input" placeholder="搜索..." />
         </div>
     </form>
     <nav class="nav">
@@ -33,39 +35,39 @@
                 <a href="/">首页</a>
             
         
-            </li><li>
+            <li>
             
                 <a href="/archives.html">归档</a>
             
         
-            </li><li>
+            <li>
             
                 <a href="/tags.html">标签</a>
             
         
-            </li><li>
+            <li>
             
                 <a href="/atom.xml">订阅</a>
             
         
-            </li><li>
+            <li>
             
                 <a href="/news.html">新闻</a>
             
         
-            </li><li>
+            <li>
             
                 <a class="recommend" href="/recommend.html"><i class="icon-recommend genericons"></i>推荐</a>
             
         
-        </li></ul>
+        </ul>
     </nav>
 </header>
 
         <main class="container">
             
 <div class="profile">
-    <span class="avatar"><img alt="avatar" src="/assets/images/avatar.jpg"></span>
+    <span class="avatar"><img alt="avatar" src="/assets/images/loading.gif" data-original="/assets/images/avatar.jpg"></span>
     <span class="author">烟鬼大叔</span>
     <p class="description">雄关漫道真如铁，而今迈步从头越。</p>
 </div>
@@ -101,7 +103,7 @@
     
     </p>
     
-    <p class="copyright">©2020 - 2021 懒人杂记</p>
+    <p class="copyright">&copy;2020 - 2021 懒人杂记</p>
     <p class="powered">Powered by <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>. Theme by <a href="/">iWriter</a></p>
 </footer>
 
@@ -111,6 +113,11 @@
 
 
 
-    
-
-<script type="text/javascript" charset="utf-8" src="/js/lazyload-plugin/lazyload.intersectionObserver.min.js"></script></body></html>
+    <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 3,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(n){n.imageLazyLoadSetting.processImages=o;var e=n.imageLazyLoadSetting.isSPA,i=n.imageLazyLoadSetting.preloadRatio||1,r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]"));function o(){e&&(r=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")));for(var t,a=0;a<r.length;a++)0<=(t=(t=r[a]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(n.innerHeight*i||document.documentElement.clientHeight*i)&&function(){var t,e,n,i,o=r[a];t=o,e=function(){r=r.filter(function(t){return o!==t})},n=new Image,i=t.getAttribute("data-original"),n.onload=function(){t.src=i,e&&e()},t.src!==i&&(n.src=i)}()}o(),n.addEventListener("scroll",function(){var t,e;t=o,e=n,clearTimeout(t.tId),t.tId=setTimeout(function(){t.call(e)},500)})}(this);</script></body>
+</html>
