@@ -244,7 +244,6 @@ h1, h2, h3, h4, h5, h6, strong {
     color: #202124;
 }
 img {
-    height: auto;
     max-width: 100%;
 }
 p {
@@ -393,8 +392,11 @@ ul, ol {
 .post-content p:last-child {
     margin-bottom: 0;
 }
-.post-content img {
+.post-content p > img, .post-content p > picture > img {
+    display: block;
     padding: 10px;
+    margin: auto;
+    border-radius: 4px;
     border: 1px solid #eee;
     box-sizing: border-box;
 }
@@ -542,8 +544,6 @@ ul, ol {
 .single img.lazyload:not(.loaded) {
     -webkit-filter:  blur(5px);
     filter:  blur(5px);
-}
-.single img.lazyload:not(.loaded):not(.loading) {
     padding-bottom: 52.286%;
 }
 /*--------------------------------------------------------------
