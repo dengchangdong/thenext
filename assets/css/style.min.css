@@ -393,11 +393,6 @@ ul, ol {
 .post-content p:last-child {
     margin-bottom: 0;
 }
-.post-content img {
-    padding: 10px;
-    border: 1px solid #eee;
-    box-sizing: border-box;
-}
 .post-content sup {
     margin-left: 3px;
     margin-right: 5px;
@@ -537,18 +532,19 @@ ul, ol {
     color: #fc6423;
 }
 .single img.lazyload {
-    transition: filter 375ms ease-in .25s;
+    position: relative;
+    transition: filter 400ms ease-in .25s;
 }
 .single img.lazyload:not(.loaded) {
-    -webkit-filter: blur(10px);
-    filter: blur(10px);
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
     padding-bottom: 56.25%;
 }
-.single img.lazyload:not(.loaded)::before {
-    content: "";
+.post-content p > img, .post-content p > picture > img {
     display: block;
-    margin: 0 auto;
-    background-image: url(/assets/images/loading.gif);
+    margin: auto;
+    border-radius: 4px;
+    box-sizing: border-box;
 }
 /*--------------------------------------------------------------
 >>> 分页:
