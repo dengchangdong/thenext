@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>懒人杂记</title>
+    <link>https://www.thenext.cc/</link>
+    
+    <atom:link href="https://www.thenext.cc/rss2.xml" rel="self" type="application/rss+xml"/>
+    
+    <description></description>
+    <pubDate>Mon, 16 Aug 2021 14:09:06 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>欢迎使用 Markdown 编辑阅读器</title>
+      <link>https://www.thenext.cc/post/1ac6cf5e.html</link>
+      <guid>https://www.thenext.cc/post/1ac6cf5e.html</guid>
+      <pubDate>Sat, 08 Jan 2022 12:22:32 GMT</pubDate>
+      
+      <description>&lt;p&gt;文章简介我们理解您需要更便捷更高效的工具记录思想，整理笔记、知识，并将其中承载的价值传播给他人，&lt;strong&gt;Markdown&lt;/strong&gt;&lt;sup id=&quot;fnref:1&quot;&gt;&lt;a href=&quot;#fn:1&quot; rel=&quot;footnote&quot;&gt;1&lt;/a&gt;&lt;/sup&gt; 是我们给出的答案 —— 我们为记录思想和分享知识提供更专业的工具。&lt;/p&gt;</description>
+      
+      
+      
+      
+      
+      <category domain="https://www.thenext.cc/tag/HTML5.html">HTML5</category>
+      
+      <category domain="https://www.thenext.cc/tag/前端.html">前端</category>
+      
+      <category domain="https://www.thenext.cc/tag/互联网.html">互联网</category>
+      
+      
+      <comments>https://www.thenext.cc/post/1ac6cf5e.html#disqus_thread</comments>
+      
+    </item>
+    
+  </channel>
+</rss>
