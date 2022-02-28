@@ -122,7 +122,7 @@
         var r = window.location.search.substr(1).match(reg);
         if (r != null) return decodeURI(r[2]); return null;
     }
-    document.getElementById("local-search-input")[0].value=val(getQueryString("q"));
+    document.getElementById("local-search-input")[0].value=getQueryString("q");
     /* $("#local-search-input").val(getQueryString("q")); */
 
 </script> 
