@@ -105,35 +105,24 @@
 
 <script src="/assets/js/search.js"></script>
  
-<script>      
-     var searchPath = "search.xml";
-     var searchInput = document.querySelector("#local-search-input");
-     if (searchPath.length == 0) {
-        searchPath = "search.xml";
-     }
-     var getSearchFile = function(){
-        var path = "/" + searchPath;
-        searchFunc(path, "local-search-input", "local-search-result");
-    }
-    searchInput.onfocus = function(){ getSearchFile() }
-
+<script>
     function getQueryString(name) {
         var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
         var r = window.location.search.substr(1).match(reg);
         if (r != null) return decodeURI(r[2]); return null;
     }
-    /* $("#local-search-input").val(getQueryString("q")); */
+    $("#local-search-input").val(getQueryString("q"));
 
-    var dom = document.querySelector('#local-search-input')
-    var evt = new InputEvent('input', {
-        inputType: 'insertText',
-        data: st,
-        dataTransfer: null,
-        isComposing: false
-    });
-    dom.value = 'd';
-    dom.dispatchEvent(evt);
-
+    var searchPath = "search.xml";
+    var searchInput = document.querySelector("#local-search-input");
+    if (searchPath.length == 0) {
+        searchPath = "search.xml";
+    }
+    var getSearchFile = function(){
+        var path = "/" + searchPath;
+        searchFunc(path, "local-search-input", "local-search-result");
+    }
+    searchInput.onfocus = function(){ getSearchFile() }
 </script> 
 
 
