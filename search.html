@@ -106,13 +106,6 @@
 <script src="/assets/js/search.js"></script>
  
 <script>
-    function getQueryString(name) {
-        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
-        var r = window.location.search.substr(1).match(reg);
-        if (r != null) return decodeURI(r[2]); return null;
-    }
-    $("#local-search-input").val(getQueryString("q"));
-
     var searchPath = "search.xml";
     var searchInput = document.querySelector("#local-search-input");
     if (searchPath.length == 0) {
@@ -123,6 +116,27 @@
         searchFunc(path, "local-search-input", "local-search-result");
     }
     searchInput.onfocus = function(){ getSearchFile() }
+
+    function getQueryString(name) {
+        var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+        var r = window.location.search.substr(1).match(reg);
+        if (r != null) return decodeURI(r[2]); return null;
+    }
+    $("#local-search-input").val(getQueryString("q"));
+
+    function fireKeyEvent(element, evtType, keyChar) {
+        element.focus();
+        var KeyboardEventInit = {key:keyChar, code:"", location:0, repeat:false, isComposing:false};
+        var evtObj = new KeyboardEvent(evtType, KeyboardEventInit);
+        element.dispatchEvent(evtObj);
+    }
+    
+    var objInput = document.getElementById("local-search-input");
+    objInput.addEventListener('keydown', function (e) {
+        objInput.value += e.key;
+    }, false);
+    
+    fireKeyEvent(objInput,"keydown","a");
 </script> 
 
 
