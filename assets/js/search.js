@@ -37,7 +37,7 @@ var searchFunc = function(path, search_id, content_id) {
 			if (!$input) return;
             var $resultContent = document.getElementById(content_id);
             $resultContent.innerHTML = '<p class=\"search-loadding-notice\">首次搜索，正在载入索引文件，请稍后……<p>';
-            if ($("#local-search-input").length > 0) {
+            if($("#local-search-input").val() !=="" && $.trim($("#local-search-input").val()).length < 0) {
                 var str = '<ul class=\"search-result-list\">';
                 var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
                 $resultContent.innerHTML = "";
