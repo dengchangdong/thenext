@@ -124,19 +124,25 @@
     }
     $("#local-search-input").val(getQueryString("q"));
 
-    function fireKeyEvent(element, evtType, keyChar) {
-        element.focus();
-        var KeyboardEventInit = {key:keyChar, code:"", location:0, repeat:false, isComposing:false};
-        var evtObj = new KeyboardEvent(evtType, KeyboardEventInit);
-        element.dispatchEvent(evtObj);
-    }
-    
-    var objInput = document.getElementById("local-search-input");
-    objInput.addEventListener('keydown', function (e) {
-        objInput.value += e.key;
-    }, false);
-    
-    fireKeyEvent(objInput,"keydown","a");
+    var t;
+    var cpLock = false;
+    $('#local-search-input').on('compositionstart', function() {
+        cpLock = true;
+    });
+    $('#local-search-input').on('compositionend', function() {
+        cpLock = false;
+        if(!cpLock) {
+            clearTimeout(t);
+            t = setTimeout(result, 500);
+        }
+    });
+    $('#local-search-input').on('input', function() {
+        if(!cpLock) {
+            clearTimeout(t);
+            t = setTimeout(result, 500);
+        }
+    });
+    function result(){}
 </script> 
 
 
