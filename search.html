@@ -124,14 +124,15 @@
     }
     /* $("#local-search-input").val(getQueryString("q")); */
 
-    function keyboardInput(dom, value) {
-      let evt = document.createEvent('HTMLEvents')
-      evt.initEvent('input', true, true)
-      dom.value = value
-      dom.dispatchEvent(evt)
-    }
-
-    keyboardInput('document.getElementById("local-search-input")','d')
+    var dom = document.querySelector('#selector')
+    var evt = new InputEvent('input', {
+        inputType: 'insertText',
+        data: st,
+        dataTransfer: null,
+        isComposing: false
+    });
+    dom.value = 'd';
+    dom.dispatchEvent(evt);
 
 </script> 
 
