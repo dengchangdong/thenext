@@ -36,6 +36,8 @@ var searchFunc = function(path, search_id, content_id) {
             var $input = document.getElementById(search_id);
 			if (!$input) return;
             var $resultContent = document.getElementById(content_id);
+            var $resultContent = document.getElementById(content_id);
+            $resultContent.innerHTML = '<ul class=\"search-result-list\"><p class=\"search-loadding-notice\">首次搜索，正在载入索引文件，请稍后……<p></ul>';
             if ($("#local-search-input").length > 0) {
                 $input.addEventListener('input', function () {
                     var str = '<ul class=\"search-result-list\">';
@@ -113,6 +115,9 @@ var searchFunc = function(path, search_id, content_id) {
                         }
                     });
                     str += "</ul>";
+                    if (str.indexOf('<li>') === -1) {
+                        return $resultContent.innerHTML = '<ul><p class=\"search-loadding-notice\">没有找到内容，请尝试更换检索词。<p></ul>';
+                    }
                     $resultContent.innerHTML = str;
                 });
             }
