@@ -104,7 +104,7 @@
 
 
 <script src="/assets/js/search.js"></script>
- 
+
 <script>
     var searchPath = "search.xml";
     var searchInput = document.querySelector("#local-search-input");
@@ -115,9 +115,6 @@
         var path = "/" + searchPath;
         searchFunc(path, "local-search-input", "local-search-result");
     }
-    /*  default
-    searchInput.onfocus = function(){ getSearchFile() } 
-    */
     searchInput.onclick = function(){ getSearchFile(); this.onclick = null }
     searchInput.onkeydown = function(){ if(event.keyCode == 13) return false }
 
@@ -126,7 +123,8 @@
         var r = window.location.search.substr(1).match(reg);
         if (r != null) return decodeURI(r[2]); return null;
     }
-    $("#local-search-input").val(getQueryString("q"));
+
+    $("#local-search-input").trigger("click").focus().val(getQueryString("q"));
 </script> 
 
 
