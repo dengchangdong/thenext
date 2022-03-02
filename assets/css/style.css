@@ -147,7 +147,7 @@ template {
 .icon-backtop:before {
     content: "\e617";
 }
-.icon-recommend:before {
+.icon-bookmarks:before {
     content: "\e6c7";
 }
 .icon-youtube:before {
@@ -573,7 +573,7 @@ ul, ol {
 /*--------------------------------------------------------------
 >>> 搜索:
 --------------------------------------------------------------*/
-.search .st-search-input {
+.search .local-search-input {
     padding: 10px 15px 10px 50px;
     width: 80%;
     font-size: 18px;
@@ -859,7 +859,7 @@ ul, ol {
         font-size: 14px;
         line-height: 50px;
     }
-    .nav .recommend .genericons {
+    .nav .bookmarks .genericons {
         margin-right: 3px;
         color: #fc6423;
         font-size: 14px;
@@ -961,7 +961,7 @@ ul, ol {
     .search-button .genericons, .menu-button .genericons {
         font-size: 18px;
     }
-    .nav .recommend .genericons {
+    .nav .bookmarks .genericons {
         display: none;
     }
     .header {
