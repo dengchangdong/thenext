@@ -36,7 +36,7 @@ var searchFunc = function(path, search_id, content_id) {
             var $input = document.getElementById(search_id);
 			if (!$input) return;
             var $resultContent = document.getElementById(content_id);
-            $resultContent.innerHTML = '<p class=\"search-loadding-notice\">首次搜索，正在载入索引文件，请稍后……<p>';
+            $resultContent.innerHTML = '<p class=\"search-notice\">请输入搜索关键词</p>';
             if ($("#local-search-input").length > 0) {
                 $input.addEventListener('input', function () {
                     var str = '<ul class=\"search-result-list\">';
@@ -115,7 +115,7 @@ var searchFunc = function(path, search_id, content_id) {
                     });
                     str += "</ul>";
                     if (str.indexOf('<li>') === -1) {
-                        return $resultContent.innerHTML = '<p class=\"search-loadding-notice\">没有找到内容，请尝试更换检索词。<p>';
+                        return $resultContent.innerHTML = '<p class=\"search-notice\">没有找到内容，请尝试更换检索词。<p>';
                     }
                     $resultContent.innerHTML = str;
                 });
