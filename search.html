@@ -124,8 +124,9 @@
         if (r != null) return decodeURI(r[2]); return null;
     }
 
-    $("#local-search-input").trigger("click").focus();
-</script> 
+    //$("#local-search-input").val(getQueryString("q")).focus().trigger("click");
+    $("#local-search-input").focus().trigger("click");
+</script>
 
 
     </body>
