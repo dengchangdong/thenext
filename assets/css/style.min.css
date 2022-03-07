@@ -785,11 +785,14 @@ ul, ol {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
-.search-popup .search-header .search-icon, 
-.search-popup .search-header .btn-close {
+.search-popup .search-icon, 
+.search-popup .btn-close {
     padding: 0 10px;
     color: #999;
-    font-size: 18px;
+}
+.search-popup .search-icon .genericons, 
+.search-popup .btn-close .genericons{
+    font-size: 20px;
     font-weight: 800;
 }
 .search-popup .search-input {
@@ -797,7 +800,8 @@ ul, ol {
 }
 .search-popup .local-search-input {
     width: 100%;
-    line-height: 2;
+    font-size: 18px;
+    line-height: 30px;
 }
 .search-popup .btn-close {
     cursor: pointer;
@@ -963,6 +967,7 @@ ul, ol {
         top: 0;
         left: 0;
         right: 0;
+        z-index: 9;
         transition: transform 0.4s;
     }
     .hide-header .header {
@@ -983,6 +988,7 @@ ul, ol {
     }
     .search-toggle .genericons, .menu-toggle .genericons {
         font-size: 18px;
+        font-weight: 800;
     }
     .nav {
         position: absolute;
