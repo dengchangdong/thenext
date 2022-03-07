@@ -26,10 +26,10 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     if (keywords.length === 1 && keywords[0] === '') {
       container.classList.add('no-result');
-      container.innerHTML = '<div class="search-result-icon"><i class="fa fa-search fa-5x"></i></div>';
+      container.innerHTML = '<span class="search-icon"><i class="icon-search genericons"></i></span>';
     } else if (resultItems.length === 0) {
       container.classList.add('no-result');
-      container.innerHTML = '<div class="search-result-icon"><i class="far fa-frown fa-5x"></i></div>';
+      container.innerHTML = '<span class="search-icon"><i class="icon-loadding genericons"></i></span>';
     } else {
       resultItems.sort((left, right) => {
         if (left.includedCount !== right.includedCount) {
@@ -49,7 +49,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   };
 
-  localSearch.highlightSearchWords(document.querySelector('.post-body'));
+  localSearch.highlightSearchWords(document.querySelector('.post-content'));
   if (CONFIG.localsearch.preload) {
     localSearch.fetchData();
   }
