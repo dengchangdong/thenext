@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
     unescape         : CONFIG.localsearch.unescape
   });
 
-  const input = document.querySelector('.local-search-input');
+  const input = document.querySelector('.search-popup .local-search-input');
 
   const inputEventFunction = () => {
     if (!localSearch.isfetched) return;
