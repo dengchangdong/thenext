@@ -1,125 +1,99 @@
-// A local search script with the help of [hexo-generator-search](https://github.com/PaicHyperionDev/hexo-generator-search)
-// Copyright (C) 2015 
-// Joseph Pan <http://github.com/wzpan>
-// Shuhao Mao <http://github.com/maoshuhao>
-// This library is free software; you can redistribute it and/or modify
-// it under the terms of the GNU Lesser General Public License as
-// published by the Free Software Foundation; either version 2.1 of the
-// License, or (at your option) any later version.
-// 
-// This library is distributed in the hope that it will be useful, but
-// WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
-// Lesser General Public License for more details.
-// 
-// You should have received a copy of the GNU Lesser General Public
-// License along with this library; if not, write to the Free Software
-// Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA
-// 02110-1301 USA
-// 
+/* global CONFIG, pjax, LocalSearch */
 
-var searchFunc = function(path, search_id, content_id) {
-    'use strict';
-    $.ajax({
-        url: path,
-        dataType: "xml",
-        success: function( xmlResponse ) {
-            // get the contents from search data
-            var datas = $( "entry", xmlResponse ).map(function() {
-                return {
-                    title: $( "title", this ).text(),
-                    content: $("content",this).text(),
-                    url: $( "url" , this).text()
-                };
-            }).get();
+document.addEventListener('DOMContentLoaded', () => {
+  if (!CONFIG.path) {
+    // Search DB path
+    console.warn('`hexo-generator-searchdb` plugin is not installed!');
+    return;
+  }
+  const localSearch = new LocalSearch({
+    path             : CONFIG.path,
+    top_n_per_article: CONFIG.localsearch.top_n_per_article,
+    unescape         : CONFIG.localsearch.unescape
+  });
 
-            var $input = document.getElementById(search_id);
-			if (!$input) return;
-            var $resultContent = document.getElementById(content_id);
-            $resultContent.innerHTML = '<p class=\"search-notice\">请输入搜索关键词</p>';
-            if ($("#local-search-input").length > 0) {
-                $input.addEventListener('input', function () {
-                    var str = '<ul class=\"search-result-list\">';
-                    var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                    $resultContent.innerHTML = "";
-                    if (this.value.trim().length <= 0) {
-                        return;
-                    }
-                    // perform local searching
-                    datas.forEach(function (data) {
-                        var isMatch = true;
-                        var content_index = [];
-                        if (!data.title || data.title.trim() === '') {
-                            data.title = "Untitled";
-                        }
-                        var data_title = data.title.trim().toLowerCase();
-                        var data_content = data.content.trim().replace(/<[^>]+>/g, "").toLowerCase();
-                        var data_url = data.url;
-                        var index_title = -1;
-                        var index_content = -1;
-                        var first_occur = -1;
-                        // only match artiles with not empty contents
-                        if (data_content !== '') {
-                            keywords.forEach(function (keyword, i) {
-                                index_title = data_title.indexOf(keyword);
-                                index_content = data_content.indexOf(keyword);
+  const input = document.querySelector('.local-search-input');
 
-                                if (index_title < 0 && index_content < 0) {
-                                    isMatch = false;
-                                } else {
-                                    if (index_content < 0) {
-                                        index_content = 0;
-                                    }
-                                    if (i == 0) {
-                                        first_occur = index_content;
-                                    }
-                                    // content_index.push({index_content:index_content, keyword_len:keyword_len});
-                                }
-                            });
-                        } else {
-                            isMatch = false;
-                        }
-                        // show search results
-                        if (isMatch) {
-                            str += "<li><a href='" + data_url + "' class='search-result-title'>" + data_title + "</a>";
-                            var content = data.content.trim().replace(/<[^>]+>/g, "");
-                            if (first_occur >= 0) {
-                                // cut out 100 characters
-                                var start = first_occur - 20;
-                                var end = first_occur + 80;
-
-                                if (start < 0) {
-                                    start = 0;
-                                }
-
-                                if (start == 0) {
-                                    end = 100;
-                                }
-
-                                if (end > content.length) {
-                                    end = content.length;
-                                }
-
-                                var match_content = content.substring(start, end);
-
-                                // highlight all keywords
-                                keywords.forEach(function (keyword) {
-                                    var regS = new RegExp(keyword, "gi");
-                                    match_content = match_content.replace(regS, "<em class=\"search-keyword\">" + keyword + "</em>");
-                                });
-
-                                str += "<p class=\"search-result\">" + match_content + "...</p>"
-                            }
-                            str += "</li>";
-                        }
-                    });
-                    str += "</ul>";
-                    if (str.indexOf('<li>') === -1) {
-                        return $resultContent.innerHTML = '<p class=\"search-notice\">没有找到内容，请尝试更换检索词。<p>';
-                    }
-                    $resultContent.innerHTML = str;
-                });
-            }
+  const inputEventFunction = () => {
+    if (!localSearch.isfetched) return;
+    const searchText = input.value.trim().toLowerCase();
+    const keywords = searchText.split(/[-\s]+/);
+    const container = document.querySelector('.search-result');
+    let resultItems = [];
+    if (searchText.length > 0) {
+      // Perform local searching
+      resultItems = localSearch.getResultItems(keywords);
+    }
+    if (keywords.length === 1 && keywords[0] === '') {
+      container.classList.add('no-result');
+      container.innerHTML = '<div class="search-result-icon"><i class="fa fa-search fa-5x"></i></div>';
+    } else if (resultItems.length === 0) {
+      container.classList.add('no-result');
+      container.innerHTML = '<div class="search-result-icon"><i class="far fa-frown fa-5x"></i></div>';
+    } else {
+      resultItems.sort((left, right) => {
+        if (left.includedCount !== right.includedCount) {
+          return right.includedCount - left.includedCount;
+        } else if (left.hitCount !== right.hitCount) {
+          return right.hitCount - left.hitCount;
         }
+        return right.id - left.id;
+      });
+      const stats = CONFIG.i18n.hits.replace(/\$\{hits}/, resultItems.length);
+
+      container.classList.remove('no-result');
+      container.innerHTML = `<div class="search-stats">${stats}</div>
+        <hr>
+        <ul class="search-result-list">${resultItems.map(result => result.item).join('')}</ul>`;
+      if (typeof pjax === 'object') pjax.refresh(container);
+    }
+  };
+
+  localSearch.highlightSearchWords(document.querySelector('.post-body'));
+  if (CONFIG.localsearch.preload) {
+    localSearch.fetchData();
+  }
+
+  if (CONFIG.localsearch.trigger === 'auto') {
+    input.addEventListener('input', inputEventFunction);
+  } else {
+    document.querySelector('.search-icon').addEventListener('click', inputEventFunction);
+    input.addEventListener('keypress', event => {
+      if (event.key === 'Enter') {
+        inputEventFunction();
+      }
     });
-}
+  }
+  window.addEventListener('search:loaded', inputEventFunction);
+
+  // Handle and trigger popup window
+  document.querySelectorAll('.popup-trigger').forEach(element => {
+    element.addEventListener('click', () => {
+      document.body.classList.add('search-active');
+      // Wait for search-popup animation to complete
+      setTimeout(() => input.focus(), 500);
+      if (!localSearch.isfetched) localSearch.fetchData();
+    });
+  });
+
+  // Monitor main search box
+  const onPopupClose = () => {
+    document.body.classList.remove('search-active');
+  };
+
+  document.querySelector('.search').addEventListener('click', event => {
+    if (event.target === document.querySelector('.search')) {
+      onPopupClose();
+    }
+  });
+  document.querySelector('.btn-close').addEventListener('click', onPopupClose);
+  document.addEventListener('pjax:success', () => {
+    localSearch.highlightSearchWords(document.querySelector('.post-body'));
+    onPopupClose();
+  });
+  window.addEventListener('keyup', event => {
+    if (event.key === 'Escape') {
+      onPopupClose();
+    }
+  });
+});

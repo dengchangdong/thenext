@@ -16,53 +16,56 @@
 </head>
 
     <body>
-        <header class="header">
-    
-        <span class="site-title"><a href="/" title="懒人杂记"><img src="/assets/images/logo.png" alt="logo"></a></span>
-    
-    <form class="search-form" action="/search.html">
-        <span class="search-button"><i class="icon-search genericons"></i></span>
-        <div class="search-text">
-            <input name="q" class="search-input" type="text" id="search-input" placeholder="搜索..." />
+            <header class="header">
+        <div class="header-inner">
+            
+                <span class="site-title">
+                    <a class="site-link" href="/" title="懒人杂记"><img class="site-logo" src="/assets/images/logo.png" alt="LOGO"></a>
+                </span>
+            
+            <div class="search-form">
+                <span class="search-icon"><i class="icon-search genericons"></i></span>
+                <input name="q" id="loca-search-input" class="local-search-input" type="text" autocomplete="off" placeholder="搜索..." />
+            </div>
+            <nav class="nav">
+                <ul class="menu">
+                
+                    <li class="menu-item">
+                    
+                        <a href="/">首页</a>
+                    
+                
+                    <li class="menu-item">
+                    
+                        <a href="/archives.html">归档</a>
+                    
+                
+                    <li class="menu-item">
+                    
+                        <a href="/tags.html">标签</a>
+                    
+                
+                    <li class="menu-item">
+                    
+                        <a href="/atom.xml">订阅</a>
+                    
+                
+                    <li class="menu-item">
+                    
+                        <a href="/news.html">新闻</a>
+                    
+                
+                    <li class="menu-item">
+                    
+                        <a class="bookmarks" href="/bookmarks.html"><i class="icon-bookmarks genericons"></i>书签</a>
+                    
+                
+                </ul>
+            </nav>
+            <span class="search-toggle"><i class="icon-search genericons"></i></span>
+            <span class="menu-toggle"><i class="icon-menu genericons"></i></span>
         </div>
-    </form>
-    <nav class="nav">
-        <span class="menu-button"><i class="icon-menu genericons"></i></span>
-        <ul>
-        
-            <li>
-            
-                <a href="/">首页</a>
-            
-        
-            <li>
-            
-                <a href="/archives.html">归档</a>
-            
-        
-            <li>
-            
-                <a href="/tags.html">标签</a>
-            
-        
-            <li>
-            
-                <a href="/atom.xml">订阅</a>
-            
-        
-            <li>
-            
-                <a href="/news.html">新闻</a>
-            
-        
-            <li>
-            
-                <a class="bookmarks" href="/bookmarks.html"><i class="icon-bookmarks genericons"></i>书签</a>
-            
-        
-        </ul>
-    </nav>
-</header>
+    </header>
 
         <main class="container">
             
@@ -85,30 +88,58 @@
 	
 </div>
         </main>
-        <footer class="footer">
+        <div class="search">
+	<div class="search-header">
+		<i class="icon-search genericons"></i>
+		<input type="text" id="local-search-input" name="q" results="0" placeholder="搜索..." class="local-search-input">
+	</div>
+	<div class="search-content">
+		<div id="local-search-result"></div>
+	</div>
+</div>
+            <footer class="footer">
+        <div class="footer-inner">
+            
+            <p class="social">
+            
+                <a target="_blank" rel="noopener" href="https://t.me/dengchangdong"><i class="icon-telegram genericons"></i></a>
+            
+                <a target="_blank" rel="noopener" href="https://twitter.com/dengchangdong"><i class="icon-twitter genericons"></i></a>
+            
+                <a target="_blank" rel="noopener" href="https://www.facebook.com/dengchangdong"><i class="icon-facebook genericons"></i></a>
+            
+                <a target="_blank" rel="noopener" href="https://github.com/dengchangdong"><i class="icon-github genericons"></i></a>
+            
+            </p>
+            
+            <p class="copyright">&copy;2020 - 2022 懒人杂记</p>
+            <p class="powered">Powered by <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>. Theme by <a href="/">iWriter</a></p>
+        </div>
+    </footer>
     
-    <p class="social">
-    
-        <a target="_blank" rel="noopener" href="https://t.me/dengchangdong"><i class="icon-telegram genericons"></i></a>
-    
-        <a target="_blank" rel="noopener" href="https://twitter.com/dengchangdong"><i class="icon-twitter genericons"></i></a>
-    
-        <a target="_blank" rel="noopener" href="https://www.facebook.com/dengchangdong"><i class="icon-facebook genericons"></i></a>
-    
-        <a target="_blank" rel="noopener" href="https://github.com/dengchangdong"><i class="icon-github genericons"></i></a>
-    
-    </p>
-    
-    <p class="copyright">&copy;2020 - 2022 懒人杂记</p>
-    <p class="powered">Powered by <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>. Theme by <a href="/">iWriter</a></p>
-</footer>
+<script src="/assets/js/search.js"></script>
 
-<span class="cover"></span>
-<span class="backtop" style="display: none;"><i class="icon-backtop genericons"></i></span>
-
-
-
-
-
+    <script class="config" data-name="main" type="application/json">
+    {"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}
+    </script>
+    <div class="search">
+        <div class="search-popup">
+            <div class="search-header">
+                <span class="search-icon"><i class="icon-search genericons"></i></span>
+                <div class="search-input">
+                    <input name="q" id="loca-search-input" class="local-search-input" type="text" autocomplete="off" placeholder="搜索..." />
+                </div>
+                <span class="btn-close"><i class="icon-close genericons"></i></span>
+            </div>
+            <div class="search-result no-result">
+                <span class="search-icon"><i class="icon-search genericons"></i></span>
+            </div>
+        </div>
+    </div>
+    <span class="backtop" style="display: none;"><i class="icon-backtop genericons"></i></span>
+    
+    
+</body>
+</html>
     </body>
 </html>
