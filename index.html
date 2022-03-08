@@ -52,11 +52,6 @@
                 
                     <li class="menu-item">
                     
-                        <a href="/news.html">新闻</a>
-                    
-                
-                    <li class="menu-item">
-                    
                         <a class="bookmarks" href="/bookmarks.html"><i class="icon-bookmarks genericons"></i>书签</a>
                     
                 
@@ -123,6 +118,17 @@
             <div class="search-result"></div>
         </div>
     </div>
+    
+<script src="/assets/js/search.js"></script>
+
+	<script type="text/javascript">
+		var search_path = "search.xml";
+		if (search_path.length == 0) {
+			search_path = "search.xml";
+		}
+		var path = "/" + search_path;
+		searchFunc(path, 'local-search-input', 'search-result');
+	</script>
     <span class="backtop" style="display: none;"><i class="icon-backtop genericons"></i></span>
     
     
