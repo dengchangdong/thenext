@@ -35,6 +35,9 @@ a {
 b, strong {
     font-weight: bolder;
 }
+ul, ol {
+    list-style-position: inside;
+}
 code, kbd, samp {
     font-family: monospace, monospace;
     font-size: 1em;
@@ -56,6 +59,7 @@ img, svg {
 }
 img, object {
     max-width: 100%;
+    box-sizing: border-box;
 }
 img {
     border-width: 0;
@@ -235,236 +239,128 @@ template {
     content: "\e7c5";
 }
 /*--------------------------------------------------------------
->>> 颜色: 
---------------------------------------------------------------*/
-:root {
-  --body-bg-color: #f5f7f9;
-  --selection-bg-color: #262a30;
-  --selection-text-color: #eee;
-  --text-color: #3c4043;
-  --heading-text-color: #202124;
-  --link-color: #333;
-  --link-hover-color: #000;
-  --header-bg-color: #262a30;
-  --content-bg-color: #fff;
-  --menu-text-color: #fff;
-  --menu-text-hover-color: #fc6423;
-  --search-form-text-color: #bbb;
-  --search-form-bg-color: rgba(255,255,255,0.05);
-  --search-form-bg-hover-color: rgba(255,255,255,0.1);
-}
-/*--------------------------------------------------------------
 >>> 全局:
 --------------------------------------------------------------*/
 body {
-    font: 1em/1.8 'Monda', "PingFang SC", "Microsoft YaHei", sans-serif;;
+    font: 1em/1.8 Avenir, "Hiragino Sans GB", "Noto Sans S Chinese", "Microsoft Yahei", "Microsoft Sans Serif", "WenQuanYi Micro Hei", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     box-sizing: border-box;
-    background: var(--body-bg-color);
-    color: var(--text-color);
+    color: #3c4043;
     transition: padding 0.2s ease-in-out;
 }
-::selection {
-    background: var(--selection-bg-color);
-    color: var(--selection-text-color);
-}
 a {
-    color: var(--link-color);
+    color: #15171a;
     text-decoration: none;
     word-wrap: break-word;
 }
 a:hover {
-    color: var(--link-hover-color);
+    color: #333;
+    text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6, strong {
     font-weight: 600;
-    color: var(--heading-text-color);
-}
-ul, ol {
-    list-style-position: inside;
 }
 /*--------------------------------------------------------------
 >>> 通用:
 --------------------------------------------------------------*/
-.posts, .pagination, .post-main, .archives, .tagcloud {
-    background-color: var(--content-bg-color);
-}
-.search-active, .menu-active {
-    overflow: hidden;
-}
-.menu, .tagcloud ul {
-    list-style-type: none;
+.container-inner, .footer-inner {
+    margin: 0 auto;
 }
 /*--------------------------------------------------------------
 >>> 页首:
 --------------------------------------------------------------*/
-.header {
-    background-color: var(--header-bg-color);
-}
 .header-inner {
     display: flex;
-    justify-content: center;
     align-items: center;
 }
-.search-toggle, .menu-toggle {
-    padding: 0 10px;
-    cursor: pointer;
-    color: var(--menu-text-color);
+.site-name {
+    font-weight: 600;
 }
-.site-link {
-    display: flex;
-    flex-direction: row;
-}
-.site-logo {
-    width: 90px;
-    height: 20px;
-}
-.search-form .search-icon, .search-form .local-search-input {
-    color: var(--search-form-text-color);
+.menu {
+    list-style-type: none;
 }
 .menu-item {
-    font-size: 14px;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: .08em;
 }
-.menu-item a {
-    color: var(--menu-text-color);
+.search-click {
+    cursor: pointer;
 }
 /*--------------------------------------------------------------
 >>> 首页:
 --------------------------------------------------------------*/
-.profile, .single .post-header, .page-header {
-    text-align: center;
+.latest {
+    border-radius: 8px;
+    background: linear-gradient(315deg,#efefef,#fafafa);
 }
-.profile .author-description, .page-meta {
-    font-size: 12px;
-    color: #999;
+.latest .post-header {
+    margin-bottom: 15px;
 }
-.avatar-image {
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
+.post-excerpt {
+    color: #757575;
 }
-.author-name {
-    display: block;
-    margin: 15px 0 5px;
-    font-weight: 600;
-}
-.pagination {
-    padding-top: 0!important;
-}
-.pagination .next {
+.latest .readmore {
     float: right;
+    font-size: 15px;
+    color: #21a81d;
 }
-.page-numbers {
-    color: #555;
+.latest .readmore .genericons {
     font-size: 14px;
-}
-.page-numbers .genericons {
-    font-size: 14px;
-}
-.prev .genericons {
-    margin-right: 3px;
-}
-.next .genericons {
     margin-left: 3px;
 }
-/*--------------------------------------------------------------
->>> 文章:
---------------------------------------------------------------*/
-.posts .post-title {
-    font-size: 18px;
-}
-.posts .post-date, .post-meta {
-    font-size: 13px;
-    color: #999;
-}
-.posts .post-excerpt {
-    font-size: 14px;
-    color: #666;
+.posts .post {
+    border-bottom: 1px dashed #e6e6e6;
 }
 .posts .post:last-child {
     margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0 none;
+}
+.posts-header {
+    border-bottom: 1px solid #e6e6e6;
+}
+.posts-title {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    color: #21a81d;
+    line-height: 3;
+}
+.posts-title:after {
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    content: "";
+    height: 4px;
+    width: 100%;
+    z-index: 5;
+    background-color: #21a81d;
+}
+.latest .post-date, .posts .post-date {
+    color: #d5d5d5;
+    font-size: 14px;
+}
+.post-meta, .page-meta, .latest .post-footer {
+    margin-top: 20px;
+    color: #757575;
 }
 /*--------------------------------------------------------------
 >>> 页脚:
 --------------------------------------------------------------*/
-.footer-inner {
-    text-align: center;
-}
 .footer-inner p {
     margin-bottom: 5px;
-    font-size: 13px;
+    font-size: 15px;
     color: #999;
     text-align: center;
 }
-.footer-inner .social .genericons {
-    font-size: 18px;
-}
-.footer-inner .social a, .footer-inner .powered a {
-    margin: 0 5px;
+.footer-inner p a {
     color: #999;
 }
-.footer-inner .social a:hover, .footer-inner .powered a:hover {
-    color: var(--text-color);
-}
-
 /*--------------------------------------------------------------
->>> 存档:
+>>> 文章:
 --------------------------------------------------------------*/
-.archives h2, .archives ul li {
-    margin-bottom: 10px;
-}
-.archives ul {
-    margin-bottom: 20px;
-}
-.archives ul:last-child {
-    margin-bottom: 0;
-}
-.archives .post-date {
-    float: right;
-    color: #999;
-}
-.tagcloud ul {
-    overflow: hidden;
-}
-.tagcloud ul li {
-    float: left;
-    margin: 10px;
-}
-
-/*--------------------------------------------------------------
->>> 文章内容:
---------------------------------------------------------------*/
-.post-title a, .archives ul li a {
-    display: inline-block;
-    position: relative;
-}
-.post-title a::before, .archives ul li a::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: #000;
-    visibility: hidden;
-    -webkit-transform: scaleX(0);
-    -moz-transform: scaleX(0);
-    -ms-transform: scaleX(0);
-    -o-transform: scaleX(0);
-    transform: scaleX(0);
-    transition-duration: 0.2s;
-    transition-timing-function: ease-in-out;
-    transition-delay: 0s;
-}
-.post-title a:hover::before, .archives ul li a:hover::before {
-    visibility: visible;
-    -webkit-transform: scaleX(1);
-    -moz-transform: scaleX(1);
-    -ms-transform: scaleX(1);
-    -o-transform: scaleX(1);
-    transform: scaleX(1);
-}
 .post-content a {
     color: #fc6423;
 }
@@ -476,13 +372,13 @@ ul, ol {
     margin-bottom: 15px;
 }
 .post-content h2 {
-    font-size: 20px;
+    font-size: 24px;
 }
 .post-content h3 {
-    font-size: 18px;
+    font-size: 20px;
 }
 .post-content h4, .post-content h5, .post-content h6 {
-    font-size: 16px;
+    font-size: 18px;
 }
 .post-content p {
     line-height: 2;
@@ -750,9 +646,48 @@ ul, ol {
     background-color: #67060c;
 }
 /*--------------------------------------------------------------
+>>> 存档:
+--------------------------------------------------------------*/
+.single .post-header, .page-header {
+    text-align: center;
+}
+.archives ul, .tagcloud ul {
+    list-style-type: none;
+}
+.archives ul li {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px dashed #eee;
+}
+.archives .post-date {
+    float: right;
+    color: #d5d5d5;
+}
+.tagcloud ul li {
+    display: inline-block;
+    margin: 10px;
+}
+/*--------------------------------------------------------------
+>>> 其他:
+--------------------------------------------------------------*/
+.backtop {
+    position: fixed;
+    padding: 15px;
+    font-size: 18px;
+    color: #fff;
+    line-height: 1;
+    z-index: 7;
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: #21a81d;
+    box-shadow: rgb(0 0 0 / 24%) 0px 8px 16px -2px;
+}
+/*--------------------------------------------------------------
 >>> 搜索:
 --------------------------------------------------------------*/
-.search {
+.search-popup {
     position: fixed;
     left: 0;
     top: 0;
@@ -764,20 +699,20 @@ ul, ol {
     visibility: hidden;
     transition: visibility 0.4s, background 0.4s;
 }
-.search-active .search {
+.search-active .search-popup {
     visibility: visible;
     background: rgba(0,0,0,0.3);
 }
-.search-popup {
+.search-form {
     margin: auto;
     transform: scale(0);
     transition: transform 0.4s;
-    background-color: var(--body-bg-color);
+    background-color: #f5f7f9;
 }
-.search-active .search-popup {
+.search-active .search-form {
     transform: scale(1);
 }
-.search-popup .search-header {
+.search-form .search-header {
     display: flex;
     padding: 10px;
     line-height: 1.5;
@@ -785,97 +720,105 @@ ul, ol {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
-.search-popup .search-header .search-icon, 
-.search-popup .search-header .btn-close {
+.search-form .search-icon, 
+.search-form .btn-close {
     padding: 0 10px;
     color: #999;
-    font-size: 18px;
+}
+.search-form .search-icon .genericons, 
+.search-form .btn-close .genericons{
+    font-size: 20px;
     font-weight: 800;
 }
-.search-popup .search-input {
+.search-form .search-input {
     flex-grow: 1;
 }
-.search-popup .local-search-input {
+.search-form .local-search-input {
     width: 100%;
-    line-height: 2;
+    font-size: 18px;
+    line-height: 30px;
 }
-.search-popup .btn-close {
+.search-form .btn-close {
     cursor: pointer;
 }
-.search-popup .btn-close:hover {
+.search-form .btn-close:hover {
     color: #000;
 }
-.search-popup .search-result {
+.search-form .search-result {
     height: calc(100% - 55px);
     overflow: auto;
     padding: 5px 25px;
 }
-.search-popup .search-result .search-icon {
+.search-form .search-result .search-icon {
     margin: auto;
     line-height: 1;
 }
-.search-popup .no-result {
+.search-form .no-result {
     display: flex;
 }
-.search-popup .no-result .icon-search {
+.search-form .no-result .icon-search {
     font-size: 5em;
     color: #ccc;
     font-weight: 800;
 }
 /*--------------------------------------------------------------
->>> 其他:
+>>> Disqus:
 --------------------------------------------------------------*/
-.backtop {
-    position: fixed;
-    padding: 10px;
-    font-size: 18px;
-    color: #fff;
-    line-height: 1;
-    z-index: 7;
-    cursor: pointer;
-    background-color: var(--header-bg-color);
+#disqus_bookmarksations {
+    margin: 0!important;
+}
+#dsqjs #dsqjs-msg {
+    margin-top: 0!important;
+}
+#dsqjs footer {
+    display: none;
+}
+#disqus_recommendations {
+    margin-bottom: 0!important;
 }
 /*--------------------------------------------------------------
 >>> 自适应:
 --------------------------------------------------------------*/
 @media screen and (min-width: 769px) {
     /* 通用 */
-    .container {
-        margin: auto;
-        width: 720px;
+    .container-inner, .footer-inner {
+        width: 790px;
+        margin: 50px auto;
     }
-    .container, .footer {
-        margin-top: 50px;
-    }
-    .posts, .pagination, .post-main, .archives, .tagcloud {
-        padding: 40px;
-    }
-    .profile, .post-header, .page-header {
-        margin-bottom: 40px;
+    .latest, .posts {
+        padding: 30px;
     }
     /* 页首 */
-    .header-inner {
-        padding: 10px 50px;
-    }
-    .search-toggle, .menu-toggle {
+    .popup-trigger, .menu-trigger {
         display: none;
     }
-    .search-form {
+    .header-inner {
+        padding: 30px 50px;
+        justify-content: space-between;
+    }
+    .site-brand {
         display: flex;
-        background-color: var(--search-form-bg-color);
-        margin-left: 50px;
+        align-items: center;
     }
-    .search-form:hover {
-        background-color: var(--search-form-bg-hover-color);
+    .site-name {
+        font-size: 24px;
     }
-    .search-form .search-icon {
-        margin: 0 10px;
+    .site-slogan {
+        position: relative;
+        margin-left: 20px;
+        padding-left: 20px;
+        font-size: 18px;
+        color: #757575;
     }
-    .search-form .local-search-input {
-        width: 250px;
-    }
-    .nav {
-        flex: 1 1 auto;
+    .site-slogan:before {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        content: "";
+        height: 40px;
+        margin-top: -20px;
+        width: 1px;
+        background-color: #e6e6e6;
     }
     .menu {
         display: flex;
@@ -884,62 +827,110 @@ ul, ol {
     .menu-item {
         margin-left: 30px;
     }
-    .menu .bookmarks .genericons {
+    .search-click .genericons {
         margin-right: 3px;
-        color: var(--menu-text-hover-color);
         font-size: 14px;
     }
-    /* 文章 */
-    .posts .post {
-        margin-bottom: 40px;
-    }
-    .posts .post-header {
-        margin-bottom: 15px;
-    }
-    .posts .post-title {
-        display: inline-block;
-    }
-    .posts .post-date {
-        float: right;
-        line-height: 32px;
-    }
-    .single .post-title, .page-title {
-        font-size: 24px;
-    }
-    .post-meta, .page-meta {
-        margin-top: 10px;
-    }
-    .sep {
-        margin: 0 5px;
-    }
-    /* 页脚 */
-    .footer {
+    /* 首页 */
+    .latest, .single .post-header, .page-header {
         margin-bottom: 50px;
     }
+    .post-excerpt {
+        font-size: 18px;
+    }
+    .latest .post-title {
+        font-size: 28px;
+    }
+    .posts .post {
+        margin-bottom: 30px;
+        padding-bottom: 30px;
+    }
+    .posts-header, .posts .post-header {
+        margin-bottom: 20px;
+    }
+    .posts .post-title {
+        font-size: 24px;
+    }
+    .posts .post .post-title {
+        margin-bottom: 10px;
+    }
+    /* 页脚 */
+    .footer-inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    /* 存档 */
+    .archives, .tagcloud, .post-main, .comments {
+        padding: 0 30px;
+    }
+    .post-meta, .page-meta, .latest .post-footer {
+        margin-top: 20px;
+    }
+    .page-title {
+        font-size: 28px;
+    }
+    .archives .by-year {
+        margin-bottom: 20px;
+        font-size: 28px;
+    }
+    .archives ul {
+        margin-bottom: 50px;
+    }
+    /* 文章 */
+    .single .post-title {
+        font-size: 32px;
+    }
+    .post-title a, .archives ul li a {
+        display: inline-block;
+        position: relative;
+    }
+    .post-title a::before, .archives ul li a::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background-color: #000;
+        visibility: hidden;
+        -webkit-transform: scaleX(0);
+        -moz-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        -o-transform: scaleX(0);
+        transform: scaleX(0);
+        transition-duration: 0.2s;
+        transition-timing-function: ease-in-out;
+        transition-delay: 0s;
+    }
+    .post-title a:hover::before, .archives ul li a:hover::before {
+        visibility: visible;
+        -webkit-transform: scaleX(1);
+        -moz-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        -o-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+    /* 其他 */
+    .backtop {
+        right: 50px;
+        bottom: 50px;
+    }
     /* 搜索 */
-    .search-popup {
+    .search-form {
         min-width: 720px;
         width: 70%;
         height: 80%;
         border-radius: 5px;
     }
-    /* 其他 */
-    .backtop {
-        right: 40px;
-        bottom: 40px;
-    }
 }
 @media screen and (max-width: 768px) {
     /* 通用 */
+    .header-inner, .container, .footer-inner {
+        padding: 10px;
+    }
     .container {
-        margin-top: 70px;
-    }
-    .posts, .post-main, .pagination, .archives, .tagcloud {
-        padding: 15px;
-        margin: auto 10px;
-    }
-    .profile, .single .post-header, .page-header {
-        margin-bottom: 20px;
+        margin-top: 80px;
     }
     /* 页首 */
     .header {
@@ -947,92 +938,70 @@ ul, ol {
         top: 0;
         left: 0;
         right: 0;
+        z-index: 9;
         transition: transform 0.4s;
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
     }
     .hide-header .header {
         transform: translateY(-100%);
     }
     .header-inner {
-        flex-shrink: 0;
-        padding: 10px 5px;
-    }
-    .search-form {
-        display: none;
-    }
-    .site-title {
-        margin: auto;
-    }
-    .search-toggle {
-        order: -1;
-    }
-    .search-toggle .genericons, .menu-toggle .genericons {
-        font-size: 18px;
+        justify-content: center;
     }
     .nav {
-        position: absolute;
-        left: 0;
-        right: 0;
-        opacity: 0.5;
-        max-height: 0;
-        overflow: hidden;
-        transition: padding 0.5s linear, max-height 0.5s linear, opacity 0.5s linear;
-        background-color: rgba(38,42,48,0.9);
-    }
-    .menu-active .nav {
-        padding: 15px 0;
-        opacity: 1;
-        max-height: calc(200% + 15px);
-    }
-    .menu-active .menu-toggle {
-        color: var(--menu-text-hover-color);
-    }
-    .menu .icon-bookmarks {
         display: none;
     }
-    .menu-item {
-        float: left;
-        width: 33.3%;
-        font-size: 16px;
-        font-weight: 600;
-        line-height: 50px;
-        text-align: center;
+    .site-brand {
+        margin: 0 auto;
     }
-    /* 文章 */
-    .posts .post {
-        margin-bottom: 20px;
-    }
-    .posts .post-header {
-        margin-bottom: 10px;
-    }
-    .post-meta, .page-meta {
-        margin-top: 5px;
-    }
-    .sep {
-        margin: 0 3px;
-    }
-    .single .post-title, .page-title {
+    .site-name {
         font-size: 20px;
     }
-    /* 存档 */
-    .archives ul li {
-        vertical-align: text-top;
+    .site-slogan {
+        display: none;
     }
-    .archives ul li a {
-        display: inline-block;
-        max-width: 80%;
+    .popup-trigger {
+        order: -1;
     }
-    /* 搜索 */
-    .search-popup {
-        height: 100%;
-        width: 100%;
+    .popup-trigger .genericons, .menu-trigger .genericons {
+        font-size: 20px;
+        padding: 0 5px;
+    }
+    /* 首页 */
+    .latest {
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    .latest .post-footer {
+        margin-top: 5px;
+    }
+    .posts-header {
+        margin-bottom: 15px;
+    }
+    .posts .post {
+        padding-bottom: 15px;
+        margin-bottom: 20px;
+    }
+    .posts .post-title {
+        font-size: 20px;
     }
     /* 页脚 */
-    .footer {
-        margin: 20px auto;
+    /* 存档 */
+    .post-meta, .page-meta {
+        margin-top: 5px;
+        margin-bottom: 20px;
     }
+
+    /* 文章 */
     /* 其他 */
     .backtop {
-        right: 10px;
+        right: 20px;
         bottom: 20px;
+    }
+    /* 搜索 */
+    .search-form {
+        height: 100%;
+        width: 100%;
     }
 }

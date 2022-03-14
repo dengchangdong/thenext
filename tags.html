@@ -7,7 +7,7 @@
     <title>标签节点 - 懒人杂记</title>
     <meta name="applicable-device" content="pc, mobile"/>
     
-<link rel="stylesheet" href="/assets/css/style.min.css">
+<link rel="stylesheet" href="/assets/css/style.css">
 
 	<script src="//cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
 	<script async src="/assets/js/main.js"></script>
@@ -18,52 +18,52 @@
     <body>
             <header class="header">
         <div class="header-inner">
-            
-                <span class="site-title">
-                    <a class="site-link" href="/" title="懒人杂记"><img class="site-logo" src="/assets/images/logo.png" alt="LOGO"></a>
-                </span>
-            
-            <div class="search-form">
-                <span class="search-icon"><i class="icon-search genericons"></i></span>
-                <input name="q" id="loca-search-input" class="local-search-input" type="text" autocomplete="off" placeholder="搜索..." />
+            <div class="site-brand">
+                
+                    <span class="site-name">
+                        <a class="site-url" href="/" title="懒人杂记">懒人杂记</a>
+                    </span>
+                
+                <span class="site-slogan">人生最大的梦想就是像猪一样的活着</span>
             </div>
             <nav class="nav">
                 <ul class="menu">
                 
-                    <li class="menu-item">
                     
+                    <li class="menu-item">
                         <a href="/">首页</a>
+                    </li>
                     
                 
-                    <li class="menu-item">
                     
+                    <li class="menu-item">
                         <a href="/archives.html">归档</a>
+                    </li>
                     
                 
-                    <li class="menu-item">
                     
+                    <li class="menu-item">
                         <a href="/tags.html">标签</a>
+                    </li>
                     
                 
-                    <li class="menu-item">
                     
+                    <li class="menu-item">
                         <a href="/atom.xml">订阅</a>
+                    </li>
                     
                 
-                    <li class="menu-item">
-                    
-                        <a class="bookmarks" href="/bookmarks.html"><i class="icon-bookmarks genericons"></i>书签</a>
-                    
-                
+                    <li class="menu-item search-click"><i class="icon-search genericons"></i>搜索</li>
                 </ul>
             </nav>
-            <span class="search-toggle"><i class="icon-search genericons"></i></span>
-            <span class="menu-toggle"><i class="icon-menu genericons"></i></span>
+            <span class="popup-trigger"><i class="icon-search genericons"></i></span>
+            <span class="menu-trigger"><i class="icon-menu genericons"></i></span>
         </div>
     </header>
 
         <main class="container">
-            <div class="page-header">
+        	<div class="container-inner">
+            	<div class="page-header">
 	<h1 class="page-title">标签节点</h1>
 	<p class="page-meta">共计 3 个标签节点</p>
 </div>
@@ -78,36 +78,25 @@
 		
 	</ul>
 </div>
+            </div>
         </main>
             <footer class="footer">
         <div class="footer-inner">
-            
-            <p class="social">
-            
-                <a target="_blank" rel="noopener" href="https://t.me/dengchangdong"><i class="icon-telegram genericons"></i></a>
-            
-                <a target="_blank" rel="noopener" href="https://twitter.com/dengchangdong"><i class="icon-twitter genericons"></i></a>
-            
-                <a target="_blank" rel="noopener" href="https://www.facebook.com/dengchangdong"><i class="icon-facebook genericons"></i></a>
-            
-                <a target="_blank" rel="noopener" href="https://github.com/dengchangdong"><i class="icon-github genericons"></i></a>
-            
-            </p>
-            
             <p class="copyright">&copy;2020 - 2022 懒人杂记</p>
             <p class="powered">Powered by <a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a>. Theme by <a href="/">iWriter</a></p>
         </div>
     </footer>
-        <div class="search">
         <div class="search-popup">
+        <div class="search-form">
             <div class="search-header">
                 <span class="search-icon"><i class="icon-search genericons"></i></span>
                 <div class="search-input">
-                    <input name="q" id="local-search-input" class="local-search-input" type="text" autocomplete="off" placeholder="搜索..." />
+                    <input name="q" id="loca-search-input" class="local-search-input" type="text" autocomplete="off" placeholder="搜索..." />
                 </div>
                 <span class="btn-close"><i class="icon-close genericons"></i></span>
             </div>
-            <div class="search-result"></div>
+            <div id="search-result" class="search-result">
+            </div>
         </div>
     </div>
     

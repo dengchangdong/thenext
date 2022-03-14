@@ -35,8 +35,9 @@ var searchFunc = function(path, search_id, content_id) {
             var $input = document.getElementById(search_id);
             if (!$input) return;
             var $resultContent = document.getElementById(content_id);
+            $resultContent.innerHTML = "<span class='search-loadding'><i class='icon-loadding genericons'></i></span>";
             $input.addEventListener('input', function(){
-                var str='<ul class=\"search-result-list\">';                
+                var str='<ul class=\"result-list\">';                
                 var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
                 $resultContent.innerHTML = "";
                 if (this.value.trim().length <= 0) {
@@ -73,7 +74,7 @@ var searchFunc = function(path, search_id, content_id) {
                     // show search results
                     if (isMatch) {
                         numOfPostFound += 1; // keeping track of # of results
-                        str += "<li><a href='"+ data_url +"' class='search-result-title'>"+ data_title +"</a>";
+                        str += "<li><a href='"+ data_url +"' class='result-title'>"+ data_title +"</a>";
                         var content = data.content.trim().replace(/<[^>]+>/g,"");
                         if (first_occur >= 0) {
                             // cut out 100 characters
@@ -95,7 +96,7 @@ var searchFunc = function(path, search_id, content_id) {
                                 match_content = match_content.replace(regS, "<em class=\"search-keyword\">"+keyword+"</em>");
                             });
                             
-                            str += "<p class=\"search-result-content\">" + match_content +"...</p>"
+                            str += "<p class=\"result-content\">" + match_content +"...</p>"
                         }
                         str += "</li>";
                     }
@@ -111,7 +112,7 @@ var searchFunc = function(path, search_id, content_id) {
                 } else {
                     summary = "Nothing found";
                 }
-                var summary = "<p class=\"text-xlarge text-color-base archieve-result search-result-summary\">" + summary + "</ul>";
+                var summary = "<p class=\"search-stats\">" + summary + "</p>";
                 $resultContent.innerHTML = summary + str;
             });
         }

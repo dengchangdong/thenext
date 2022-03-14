@@ -2,24 +2,26 @@ $(function() {
     var body = $("body");
     var header = $(".header");
     var menu = $(".nav");
-    var topToggle = $(".backtop");
-    var menuToggle = $(".menu-toggle");
-    var searchToggle = $(".search-toggle");
+    var topTrigger = $(".backtop");
+    var menuTrigger = $(".menu-trigger");
+    var searchTrigger = $(".popup-trigger");
+    var searchClick = $(".search-click");
     var searchClose = $(".btn-close");
-    var searchFormInput = $(".search-form .local-search-input");
-    var searchPopupInput = $(".search-popup .local-search-input");
     var pageHight = $(window).pageYOffset;
     var headerHight = header.height();
 
     // Menu toggle
-    menuToggle.click(function() {
+    menuTrigger.click(function() {
         body.toggleClass("menu-active").removeClass("search-active");
         menu.css("top", (header.outerHeight() - 1));
     }); 
 
     // Search toggle
-    searchToggle.click(function() {
+    searchTrigger.click(function() {
         body.toggleClass("search-active").removeClass("menu-active");
+    }); 
+    searchClick.click(function() {
+        body.addClass("search-active");
     }); 
     searchClose.click(function() {
         body.removeClass("search-active");
@@ -47,7 +49,8 @@ $(function() {
         }
     });
 
-    // Delay submission of search
+        // Delay submission of search
+    /*
     $.fn.extend({
         donetyping: function(callback,timeout){
             timeout = timeout || 500;
@@ -73,18 +76,18 @@ $(function() {
     });
     searchFormInput.donetyping(function(){
         body.addClass("search-active");
-        searchPopupInput.val(searchFormInput.val());
     });
+    */
 
     // Show/Hide backtop button
     $(window).scroll(function() {
         if ($(window).scrollTop() >= 50) {
-            topToggle.fadeIn();
+            topTrigger.fadeIn();
         } else {
-            topToggle.fadeOut();
+            topTrigger.fadeOut();
         }
     });
-    topToggle.click(function() {
+    topTrigger.click(function() {
         $("html,body").animate({scrollTop: 0}, 500);
     });
 });
