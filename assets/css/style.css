@@ -752,7 +752,7 @@ h1, h2, h3, h4, h5, h6, strong {
     overflow: auto;
     padding: 5px 25px;
 }
-.search-form .search-result .search-icon {
+.search-form .result-icon {
     margin: auto;
     line-height: 1;
 }
@@ -882,7 +882,7 @@ h1, h2, h3, h4, h5, h6, strong {
     }
     /* 文章 */
     .single .post-title {
-        font-size: 32px;
+        font-size: 28px;
     }
     .post-title a, .archives ul li a {
         display: inline-block;
@@ -913,6 +913,9 @@ h1, h2, h3, h4, h5, h6, strong {
         -ms-transform: scaleX(1);
         -o-transform: scaleX(1);
         transform: scaleX(1);
+    }
+    .comments {
+        margin-top: 50px;
     }
     /* 其他 */
     .backtop {
@@ -997,6 +1000,9 @@ h1, h2, h3, h4, h5, h6, strong {
     }
 
     /* 文章 */
+    .comments {
+        margin-top: 15px;
+    }
     /* 其他 */
     .backtop {
         right: 20px;

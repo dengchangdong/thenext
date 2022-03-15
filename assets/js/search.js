@@ -19,28 +19,28 @@
 // 
 
 var searchFunc = function(path, search_id, content_id) {
-    'use strict';
+    "use strict";
     $.ajax({
         url: path,
         dataType: "xml",
         success: function( xmlResponse ) {
             // get the contents from search data
-            var datas = $( "entry", xmlResponse ).map(function() {
+            var datas = $("entry", xmlResponse).map(function() {
                 return {
-                    title: $( "title", this ).text(),
-                    content: $("content",this).text(),
-                    url: $( "url" , this).text()
+                    title: $("title", this).text(),
+                    content: $("content", this).text(),
+                    url: $("url", this).text()
                 };
             }).get();
             var $input = document.getElementById(search_id);
             if (!$input) return;
             var $resultContent = document.getElementById(content_id);
-            $resultContent.innerHTML = "<span class='search-loadding'><i class='icon-loadding genericons'></i></span>";
-            $input.addEventListener('input', function(){
-                var str='<ul class=\"result-list\">';                
+            $input.addEventListener("input", function(){
+                var str="<ul class=\"result-list\">";                
                 var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
-                $resultContent.innerHTML = "";
+                    $resultContent.innerHTML = "<p class=\"result-icon\"><i class=\"icon-search genericons\"></i></p>";
                 if (this.value.trim().length <= 0) {
+                    $resultContent.classList.add("no-result");
                     return;
                 }
                 // perform local searching
@@ -55,7 +55,7 @@ var searchFunc = function(path, search_id, content_id) {
                     var index_content = -1;
                     var first_occur = -1;
                     // only match artiles with not empty titles and contents
-                    if(data_title != '' && data_content != '') {
+                    if(data_title != '' && data_content != "") {
                         keywords.forEach(function(keyword, i) {
                             index_title = data_title.indexOf(keyword);
                             index_content = data_content.indexOf(keyword);
@@ -73,6 +73,7 @@ var searchFunc = function(path, search_id, content_id) {
                     }
                     // show search results
                     if (isMatch) {
+                        $resultContent.classList.remove("no-result");
                         numOfPostFound += 1; // keeping track of # of results
                         str += "<li><a href='"+ data_url +"' class='result-title'>"+ data_title +"</a>";
                         var content = data.content.trim().replace(/<[^>]+>/g,"");
@@ -109,10 +110,11 @@ var searchFunc = function(path, search_id, content_id) {
                     } else {
                         summary = numOfPostFound + " post found";
                     }
+                    var summary = "<p class=\"search-stats\">" + summary + "</p>";
                 } else {
-                    summary = "Nothing found";
+                    $resultContent.classList.add("no-result");
+                    summary = "<p class=\"result-icon\">没有找到内容</p>";
                 }
-                var summary = "<p class=\"search-stats\">" + summary + "</p>";
                 $resultContent.innerHTML = summary + str;
             });
         }
