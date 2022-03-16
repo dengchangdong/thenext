@@ -191,6 +191,10 @@
 		}
 		var path = "/" + search_path;
 		searchFunc(path, 'local-search-input', 'search-result');
+        var xmlHttp = path;
+        if (xmlHttp.readyState == 4) {
+            document.getElementById("search-result").replace(/loadding/g, "search");
+        }
 	</script>
     <span class="backtop" style="display: none;"><i class="icon-backtop genericons"></i></span>
     
