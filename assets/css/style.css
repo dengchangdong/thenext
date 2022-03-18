@@ -563,7 +563,7 @@ hr {
         width: 790px;
         max-width: 90%;
     }
-    .posts, .post-main, .archives, .tagcloud {
+    .posts, .post-main, .archives, .tagcloud, .comments {
         padding: 0 30px;
     }
     /* 页首 */
@@ -713,7 +713,7 @@ hr {
         margin: 0 10px;
     }
     .container-inner {
-        margin-top: 58px;
+        margin-top: 63px;
     }
     /* 页首 */
     .header {
@@ -789,6 +789,15 @@ hr {
     /* 存档 */
 
     /* 文章 */
+    .single .post-header, .page-meta {
+        margin-bottom: 15px;
+    }
+    .single .post-title, .page-title {
+        font-size: 20px;
+    }
+    .single .post-meta, .page-meta {
+        font-size: 12px;
+    }
     .post-tags a {
         font-size: 12px;
     }
@@ -799,10 +808,14 @@ hr {
     .footer-inner p {
         font-size: 13px;
     }
-    /* 其他 */
     /* 搜索 */
     .search-form {
         height: 100%;
         width: 100%;
+    }
+    /* 其他 */
+    .backtop {
+        right: 15px;
+        bottom: 15px;
     }
 }
