@@ -713,7 +713,7 @@ hr {
         margin: 0 10px;
     }
     .container-inner {
-        margin-top: 63px;
+        margin-top: 60px;
     }
     /* 页首 */
     .header {
@@ -738,7 +738,7 @@ hr {
         margin: 0 auto;
     }
     .site-name {
-        font-size: 20px;
+        font-size: 18px;
     }
     .site-slogan, .menu {
         display: none;
@@ -750,12 +750,12 @@ hr {
         padding: 0 10px;
     }
     .popup-trigger .genericons, .menu-trigger .genericons {
-        font-size: 20px;
+        font-size: 18px;
     }
     /* 首页 */
     .latest {
         padding: 10px;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
     }
     .latest .post-header {
         margin-bottom: 10px;
@@ -780,8 +780,8 @@ hr {
         padding-bottom: 5px;
     }
     .posts .post {
-        margin-bottom: 10px;
-        padding-bottom: 10px;
+        margin-bottom: 15px;
+        padding-bottom: 12px;
     }
     .posts .post-date {
         font-size: 12px;
@@ -804,6 +804,7 @@ hr {
     /* 页脚 */
     .footer-inner {
         text-align: center;
+        padding: 15px 0;
     }
     .footer-inner p {
         font-size: 13px;
