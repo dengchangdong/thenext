@@ -484,9 +484,9 @@ hr {
     color: #999;
 }
 .search-result {
-    height: calc(100% - 60px);
+    height: calc(100% - 70px);
     overflow: auto;
-    padding: 5px 25px;
+    padding: 10px 25px;
 }
 .no-result {
     display: flex;
@@ -500,17 +500,29 @@ hr {
     color: #ccc;
     font-weight: 800;
 }
+.search-stats {
+    margin-bottom: 10px;
+    font-size: 12px;
+    color: #70757a;
+}
 .result-list {
     list-style-type: none;
 }
 .result-list li {
     margin-bottom: 20px;
 }
+.result-list li:last-child {
+    margin-bottom: 0;
+}
 .result-list li a {
-    font-size: 18px;
+    font-weight: 600;
+}
+.result-list li p {
+    font-size: 14px;
 }
 .result-list li em {
     color: #ea4335;
+    font-style: normal;
 }
 /*--------------------------------------------------------------
 >>> 其他:

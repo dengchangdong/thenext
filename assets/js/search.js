@@ -75,17 +75,17 @@ var searchFunc = function(path, search_id, content_id) {
                     if (isMatch) {
                         $resultContent.classList.remove("no-result");
                         numOfPostFound += 1; // keeping track of # of results
-                        str += "<li><a href='"+ data_url +">"+ data_title +"</a>";
+                        str += "<li><a href='"+ data_url +"'>"+ data_title +"</a>";
                         var content = data.content.trim().replace(/<[^>]+>/g,"");
                         if (first_occur >= 0) {
                             // cut out 100 characters
                             var start = first_occur - 20;
-                            var end = first_occur + 80;
+                            var end = first_occur + 40;
                             if(start < 0){
                                 start = 0;
                             }
                             if(start == 0){
-                                end = 100;
+                                end = 60;
                             }
                             if(end > content.length){
                                 end = content.length;
@@ -106,9 +106,9 @@ var searchFunc = function(path, search_id, content_id) {
                 // attaching a summary of searching result
                 if (numOfPostFound > 0) {
                     if (numOfPostFound > 1) {
-                        summary = "共找到 " + numOfPostFound + " 篇文章";
+                        summary = "共找到 " + numOfPostFound + " 条记录";
                     } else {
-                        summary = "共找到 " + numOfPostFound + " 篇文章"; // Only one
+                        summary = "共找到 " + numOfPostFound + " 条记录"; // Only one
                     }
                     var summary = "<p class=\"search-stats\">" + summary + "</p>";
                 } else {
