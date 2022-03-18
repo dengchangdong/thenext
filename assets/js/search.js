@@ -75,7 +75,7 @@ var searchFunc = function(path, search_id, content_id) {
                     if (isMatch) {
                         $resultContent.classList.remove("no-result");
                         numOfPostFound += 1; // keeping track of # of results
-                        str += "<li><a href='"+ data_url +"' class='result-title'>"+ data_title +"</a>";
+                        str += "<li><a href='"+ data_url +">"+ data_title +"</a>";
                         var content = data.content.trim().replace(/<[^>]+>/g,"");
                         if (first_occur >= 0) {
                             // cut out 100 characters
@@ -94,10 +94,10 @@ var searchFunc = function(path, search_id, content_id) {
                             // highlight all keywords
                             keywords.forEach(function(keyword){
                                 var regS = new RegExp(keyword, "gi");
-                                match_content = match_content.replace(regS, "<em class=\"search-keyword\">"+keyword+"</em>");
+                                match_content = match_content.replace(regS, "<em>"+keyword+"</em>");
                             });
                             
-                            str += "<p class=\"result-content\">" + match_content +"...</p>"
+                            str += "<p>" + match_content +"...</p>"
                         }
                         str += "</li>";
                     }
@@ -106,9 +106,9 @@ var searchFunc = function(path, search_id, content_id) {
                 // attaching a summary of searching result
                 if (numOfPostFound > 0) {
                     if (numOfPostFound > 1) {
-                        summary = numOfPostFound + " posts found";
+                        summary = "共找到 " + numOfPostFound + " 篇文章";
                     } else {
-                        summary = numOfPostFound + " post found";
+                        summary = "共找到 " + numOfPostFound + " 篇文章"; // Only one
                     }
                     var summary = "<p class=\"search-stats\">" + summary + "</p>";
                 } else {

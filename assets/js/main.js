@@ -6,7 +6,7 @@ $(function() {
     var menuTrigger = $(".menu-trigger");
     var searchTrigger = $(".popup-trigger");
     var searchClick = $(".search-click");
-    var searchClose = $(".btn-close");
+    var searchClose = $(".search-close");
     var pageHight = $(window).pageYOffset;
     var headerHight = header.height();
 
@@ -48,36 +48,6 @@ $(function() {
             body.removeClass("hide-header menu-active search-active");
         }
     });
-
-        // Delay submission of search
-    /*
-    $.fn.extend({
-        donetyping: function(callback,timeout){
-            timeout = timeout || 500;
-            var timeoutReference,
-                doneTyping = function(el){
-                    if (!timeoutReference) return;
-                    timeoutReference = null;
-                    callback.call(el);
-                };
-            return this.each(function(i,el){
-                var $el = $(el);
-                $el.is(':input') && $el.on('keyup keypress',function(e){
-                    if (e.type=='keyup' && e.keyCode!=8) return;
-                    if (timeoutReference) clearTimeout(timeoutReference);
-                    timeoutReference = setTimeout(function(){
-                        doneTyping(el);
-                    }, timeout);
-                }).on('blur',function(){
-                    doneTyping(el);
-                });
-            });
-        }
-    });
-    searchFormInput.donetyping(function(){
-        body.addClass("search-active");
-    });
-    */
 
     // Show/Hide backtop button
     $(window).scroll(function() {

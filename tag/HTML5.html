@@ -93,7 +93,7 @@
                 <div class="search-input">
                     <input name="q" id="local-search-input" class="local-search-input" type="text" autocomplete="off" placeholder="搜索..." />
                 </div>
-                <span class="btn-close"><i class="icon-close genericons"></i></span>
+                <span class="search-close"><i class="icon-close genericons"></i></span>
             </div>
             <div id="search-result" class="search-result no-result">
                 <p class="result-icon"><i class="icon-search genericons"></i></p>
@@ -110,10 +110,6 @@
 		}
 		var path = "/" + search_path;
 		searchFunc(path, 'local-search-input', 'search-result');
-        var xmlHttp = path;
-        if (xmlHttp.readyState == 4) {
-            document.getElementById("search-result").replace(/loadding/g, "search");
-        }
 	</script>
     <span class="backtop" style="display: none;"><i class="icon-backtop genericons"></i></span>
     

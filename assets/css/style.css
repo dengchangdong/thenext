@@ -239,6 +239,9 @@ template {
     content: "\e7c5";
 }
 /*--------------------------------------------------------------
+>>> 代码高亮:
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
 >>> 全局:
 --------------------------------------------------------------*/
 body {
@@ -261,14 +264,19 @@ a:hover {
 h1, h2, h3, h4, h5, h6, strong {
     font-weight: 600;
 }
+hr {
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #d6d9dc;
+}
 /*--------------------------------------------------------------
 >>> 通用:
 --------------------------------------------------------------*/
 .container-inner, .footer-inner {
     margin: 0 auto;
 }
-.search-active {
-    overflow: hidden;
+.sep {
+    margin: 0 3px;
 }
 /*--------------------------------------------------------------
 >>> 页首:
@@ -288,8 +296,12 @@ h1, h2, h3, h4, h5, h6, strong {
     font-weight: 700;
     letter-spacing: .08em;
 }
-.search-click {
-    cursor: pointer;
+.menu-item a:hover, .search-click:hover {
+    color: #21a81d;
+}
+.menu-item .genericons {
+    font-size: 15px;
+    margin-right: 3px;
 }
 /*--------------------------------------------------------------
 >>> 首页:
@@ -298,28 +310,15 @@ h1, h2, h3, h4, h5, h6, strong {
     border-radius: 8px;
     background: linear-gradient(315deg,#efefef,#fafafa);
 }
-.latest .post-header {
-    margin-bottom: 15px;
+.latest .post-date {
+    color: #d5d5d5;
 }
-.post-excerpt {
-    color: #757575;
-}
-.latest .readmore {
+.readmore {
     float: right;
-    font-size: 15px;
     color: #21a81d;
 }
-.latest .readmore .genericons {
-    font-size: 14px;
+.readmore .genericons {
     margin-left: 3px;
-}
-.posts .post {
-    border-bottom: 1px dashed #e6e6e6;
-}
-.posts .post:last-child {
-    margin-bottom: 0;
-    padding-bottom: 0;
-    border-bottom: 0 none;
 }
 .posts-header {
     border-bottom: 1px solid #e6e6e6;
@@ -329,7 +328,6 @@ h1, h2, h3, h4, h5, h6, strong {
     display: inline-block;
     font-size: 14px;
     color: #21a81d;
-    line-height: 3;
 }
 .posts-title:after {
     position: absolute;
@@ -341,328 +339,68 @@ h1, h2, h3, h4, h5, h6, strong {
     z-index: 5;
     background-color: #21a81d;
 }
-.latest .post-date, .posts .post-date {
-    color: #d5d5d5;
-    font-size: 14px;
-}
-.post-meta, .page-meta, .latest .post-footer {
-    margin-top: 20px;
+.post-excerpt {
     color: #757575;
 }
-/*--------------------------------------------------------------
->>> 页脚:
---------------------------------------------------------------*/
-.footer-inner p {
-    margin-bottom: 5px;
-    font-size: 15px;
-    color: #999;
-    text-align: center;
+.posts .post {
+    border-bottom: 1px dashed #e6e6e6;
 }
-.footer-inner p a {
-    color: #999;
+.posts .post:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: 0 none;
+}
+.posts .post-date {
+    color: #d5d5d5;
 }
 /*--------------------------------------------------------------
 >>> 文章:
 --------------------------------------------------------------*/
-.post-content a {
-    color: #fc6423;
+.single .post-header {
+    text-align: center;
 }
-.post-content a:hover {
-    border-bottom: 1px solid #fc6423;
-}
-.post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
-    margin-top: 30px;
-    margin-bottom: 15px;
-}
-.post-content h2 {
-    font-size: 24px;
-}
-.post-content h3 {
-    font-size: 20px;
-}
-.post-content h4, .post-content h5, .post-content h6 {
-    font-size: 18px;
-}
-.post-content p {
-    line-height: 2;
-    margin: 15px 0 20px;
-}
-.post-content p:first-child {
-    margin-top: 0;
-}
-.post-content p:last-child {
-    margin-bottom: 0;
-}
-.post-content img {
-    padding: 10px;
-    border: 1px solid #eee;
-}
-.post-content sup {
-    margin-left: 3px;
-    margin-right: 5px;
-}
-.post-content sup a:before {
-    content: "[";
-}
-.post-content sup a:after {
-    content: "]";
-}
-.post-content p code {
-    padding: 2px 5px;
-    margin: 0 3px;
-    font-size: 14px;
-    color: #5badf0;
-    background-color: #eee;
-}
-.post-content blockquote {
-    position: relative;
-    margin: 20px 0;
-    padding: 15px 15px 15px 50px;
-    font-size: 14px;
-    background-color: #f2f2f2;
-}
-.post-content blockquote:before {
-    position: absolute;
-    top: 20px;
-    left: 10px;
-    content: "\e6b3";
-    font-family: "genericons" !important;
-    font-size: 32px;
-    color: #ccc;
-    line-height: 1;
-}
-.post-content ol, .post-content ul {
-    padding-left: 0;
-}
-.post-content ol {
-  counter-reset: counter;
-}
-.post-content li {
-    position: relative;
-    list-style: none;
-}
-.post-content ol li {
-    padding-left: 32px;
-}
-.post-content ul li {
-    padding-left: 20px;
-}
-.post-content li::before {
-    position: absolute;
-    left: 0;
-}
-.post-content ol li::before {
-    content: counter(counter) ".";
-    counter-increment: counter;
-}
-.post-content ul li::before {
-    content: "\2022";
-}
-.post-content table {
-    width: 100%;
-    margin: 30px 0;
-    border-collapse: collapse;
-    font-size: 14px;
-    line-height: 20px;
-}
-.post-content th, .post-content td {
-    text-align: left;
-    padding-right: 15px;
-    vertical-align: top;
-}
-.post-content table td, .post-content td {
-    border-style: solid;
-    padding: 8px 10px;
-    border-width: 1px 0 0 0;
-}
-.post-content thead th, .post-content th {
-    text-align: left;
-    padding: 8px 10px;
-    height: 20px;
-    font-weight: bold;
-    color: #444;
-    cursor: default;
-    white-space: nowrap;
-    background-color: #eee;
-    border: 1px solid #dadadc;
-}
-.post-content tr > td {
-    border: 1px solid #dadadc;
-}
-.post-content tr:nth-child(even)>td {
-    background-color: #fcfcfc;
+.post-content h2, .post-content h3, .post-content h4, .post-content h5 {
+    margin: 1em auto .5em;
 }
 .footnotes {
-    margin: 30px 0 20px;
-    padding-top: 20px;
-    font-size: 14px;
     border-top: 1px solid #eee;
-}
-.footnotes ol li {
-    margin-bottom: 10px;
-}
-.footnotes .footnote-backref {
-    color: #bbb;
-}
-.footnotes .footnote-backref:hover {
-    color: #555;
-    border-bottom: 0 none;
-}
-.footnote-backref .genericons {
-    font-size: 13px;
 }
 .post-tags a {
     display: inline-block;
     padding: 3px 10px;
     margin-right: 10px;
-    font-size: 12px;
     color: #757575;
     background-color: #f2f2f2;
 }
-.post-tags {
-    margin: 20px 0 0;
+.post-tags a:last-child {
+    margin-right: 0;
 }
-.post-tags a::before {
+.post-tags a:before {
     content: "#";
     margin-right: 3px;
-}
-.post-tags a:hover {
-    color: #fc6423;
-}
-/*--------------------------------------------------------------
->>> 代码高亮:
---------------------------------------------------------------*/
-.highlight {
-    display: block;
-    margin: 20px 0;
-    padding: 0;
-    width: 100%;
-    overflow-x: auto;
-    font-size: 13px;
-    line-height: 1.6;
-    color: #c9d1d9;
-    border-radius: 3px;
-    background-color: #0d1117;
-}
-.highlight table {
-    display: block;
-    width: 100%;
-    margin: 0;
-}
-.highlight table td, .highlight table th, .highlight table tr {
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.highlight .gutter {
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-}
-.highlight pre {
-    border: 0 none;
-    margin: 0;
-    padding: 10px;
-}
-.highlight .gutter pre {
-    color: #869194;
-    text-align: right;
-}
-.highlight .gutter .line {
-    height: 20px;
-}
-.highlight .code {
-    width: 100%;
-}
-.hljs-doctag,
-.hljs-keyword,
-.hljs-meta .hljs-keyword,
-.hljs-template-tag,
-.hljs-template-variable,
-.hljs-type,
-.hljs-variable.language_ {
-    color: #ff7b72;
-}
-.hljs-title,
-.hljs-title.class_,
-.hljs-title.class_.inherited__,
-.hljs-title.function_ {
-    color: #d2a8ff;
-}
-.hljs-attr,
-.hljs-attribute,
-.hljs-literal,
-.hljs-meta,
-.hljs-number,
-.hljs-operator,
-.hljs-variable,
-.hljs-selector-attr,
-.hljs-selector-class,
-.hljs-selector-id {
-    color: #79c0ff;
-}
-.hljs-regexp,
-.hljs-string,
-.hljs-meta .hljs-string {
-    color: #a5d6ff;
-}
-.hljs-built_in,
-.hljs-symbol {
-    color: #ffa657;
-}
-.hljs-comment,
-.hljs-code,
-.hljs-formula {
-    color: #8b949e;
-}
-.hljs-name,
-.hljs-quote,
-.hljs-selector-tag,
-.hljs-selector-pseudo {
-    color: #7ee787;
-}
-.hljs-subst {
-    color: #c9d1d9;
-}
-.hljs-section {
-    color: #1f6feb;
-    font-weight: bold;
-}
-.hljs-bullet {
-    color: #f2cc60;
-}
-.hljs-emphasis {
-    color: #c9d1d9;
-    font-style: italic;
-}
-.hljs-strong {
-    color: #c9d1d9;
-    font-weight: bold;
-}
-.hljs-addition {
-    color: #aff5b4;
-    background-color: #033a16;
-}
-.hljs-deletion {
-    color: #ffdcd7;
-    background-color: #67060c;
 }
 /*--------------------------------------------------------------
 >>> 存档:
 --------------------------------------------------------------*/
-.single .post-header, .page-header {
+.page-header {
     text-align: center;
 }
 .archives ul, .tagcloud ul {
     list-style-type: none;
 }
+.archives .year {
+    color: #21a81d;
+}
 .archives ul li {
-    font-size: 18px;
-    font-weight: 600;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 1px dashed #eee;
+    border-bottom: 1px dashed #e6e6e6;
+}
+.archives ul:last-child {
+    margin-bottom: 0;
+}
+.archives ul:last-child li:last-child {
+    border-bottom: 0 none;
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 .archives .post-date {
     float: right;
@@ -670,7 +408,109 @@ h1, h2, h3, h4, h5, h6, strong {
 }
 .tagcloud ul li {
     display: inline-block;
-    margin: 10px;
+}
+.single .post-meta, .page-meta {
+    color: #757575;
+}
+/*--------------------------------------------------------------
+>>> 页脚:
+--------------------------------------------------------------*/
+.footer-inner p {
+    color: #999;
+    text-align: center;
+}
+.footer-inner p a {
+    color: #999;
+}
+.footer-inner p a:hover {
+    color: #333;
+}
+/*--------------------------------------------------------------
+>>> 搜索:
+--------------------------------------------------------------*/
+.search-active {
+    overflow: hidden;
+}
+.search-popup {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 9;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    background: rgba(0,0,0,0);
+    visibility: hidden;
+    transition: visibility 0.4s, background 0.4s;
+}
+.search-form {
+    margin: auto;
+    transform: scale(0);
+    transition: transform 0.4s;
+    background-color: #f5f7f9;
+}
+.search-active .search-popup {
+    visibility: visible;
+    background: rgba(0,0,0,0.3);
+}
+.search-active .search-form {
+    transform: scale(1);
+}
+.search-header {
+    display: flex;
+    padding: 10px;
+    line-height: 1.5;
+    background-color: #eee;
+}
+.search-input {
+    flex-grow: 1;
+}
+.local-search-input {
+    width: 100%;
+    font-size: 16px;
+    line-height: 30px;
+}
+.search-icon, .search-close {
+    padding: 0 10px;
+}
+.search-close {
+    cursor: pointer;
+}
+.search-close:hover .genericons {
+    color: #21a81d;
+}
+.search-header .genericons {
+    font-size: 18px;
+    color: #999;
+}
+.search-result {
+    height: calc(100% - 60px);
+    overflow: auto;
+    padding: 5px 25px;
+}
+.no-result {
+    display: flex;
+}
+.result-icon {
+    margin: auto;
+    line-height: 1;
+}
+.result-icon .genericons {
+    font-size: 5em;
+    color: #ccc;
+    font-weight: 800;
+}
+.result-list {
+    list-style-type: none;
+}
+.result-list li {
+    margin-bottom: 20px;
+}
+.result-list li a {
+    font-size: 18px;
+}
+.result-list li em {
+    color: #ea4335;
 }
 /*--------------------------------------------------------------
 >>> 其他:
@@ -686,83 +526,6 @@ h1, h2, h3, h4, h5, h6, strong {
     border-radius: 100%;
     background-color: #21a81d;
     box-shadow: rgb(0 0 0 / 24%) 0px 8px 16px -2px;
-}
-/*--------------------------------------------------------------
->>> 搜索:
---------------------------------------------------------------*/
-.search-popup {
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 9;
-    display: flex;
-    height: 100%;
-    width: 100%;
-    background: rgba(0,0,0,0);
-    visibility: hidden;
-    transition: visibility 0.4s, background 0.4s;
-}
-.search-active .search-popup {
-    visibility: visible;
-    background: rgba(0,0,0,0.3);
-}
-.search-form {
-    margin: auto;
-    transform: scale(0);
-    transition: transform 0.4s;
-    background-color: #f5f7f9;
-}
-.search-active .search-form {
-    transform: scale(1);
-}
-.search-form .search-header {
-    display: flex;
-    padding: 10px;
-    line-height: 1.5;
-    background-color: #eee;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-}
-.search-form .search-icon, 
-.search-form .btn-close {
-    padding: 0 10px;
-    color: #999;
-}
-.search-form .search-icon .genericons, 
-.search-form .btn-close .genericons{
-    font-size: 20px;
-    font-weight: 800;
-}
-.search-form .search-input {
-    flex-grow: 1;
-}
-.search-form .local-search-input {
-    width: 100%;
-    font-size: 18px;
-    line-height: 30px;
-}
-.search-form .btn-close {
-    cursor: pointer;
-}
-.search-form .btn-close:hover {
-    color: #000;
-}
-.search-form .search-result {
-    height: calc(100% - 60px);
-    overflow: auto;
-    padding: 5px 25px;
-}
-.search-form .result-icon {
-    margin: auto;
-    line-height: 1;
-}
-.search-form .no-result {
-    display: flex;
-}
-.search-form .no-result .icon-search {
-    font-size: 5em;
-    color: #ccc;
-    font-weight: 800;
 }
 /*--------------------------------------------------------------
 >>> Disqus:
@@ -786,18 +549,18 @@ h1, h2, h3, h4, h5, h6, strong {
     /* 通用 */
     .container-inner, .footer-inner {
         width: 790px;
-        margin: 50px auto;
+        max-width: 90%;
     }
-    .latest, .posts {
-        padding: 30px;
+    .posts, .post-main, .archives, .tagcloud {
+        padding: 0 30px;
     }
     /* 页首 */
     .popup-trigger, .menu-trigger {
         display: none;
     }
     .header-inner {
-        padding: 30px 50px;
         justify-content: space-between;
+        padding: 30px 150px 80px;
     }
     .site-brand {
         display: flex;
@@ -810,7 +573,6 @@ h1, h2, h3, h4, h5, h6, strong {
         position: relative;
         margin-left: 20px;
         padding-left: 20px;
-        font-size: 18px;
         color: #757575;
     }
     .site-slogan:before {
@@ -830,97 +592,91 @@ h1, h2, h3, h4, h5, h6, strong {
     .menu-item {
         margin-left: 30px;
     }
-    .search-click .genericons {
-        margin-right: 3px;
-        font-size: 14px;
+    .menu-item:first-child {
+        margin-left: 0;
     }
     /* 首页 */
-    .latest, .single .post-header, .page-header {
-        margin-bottom: 50px;
+    .latest {
+        padding: 30px;
+        margin-bottom: 60px;
     }
-    .post-excerpt {
-        font-size: 18px;
+    .latest .post-header {
+        margin-bottom: 20px;
     }
-    .latest .post-title {
-        font-size: 28px;
+    .latest .post-meta {
+        margin-top: 20px;
+    }
+    .latest .post-date {
+        font-size: 15px;
+    }
+    .readmore {
+        font-size: 15px;
+    }
+    .readmore .genericons {
+        font-size: 14px;
+    }
+    .posts-header {
+        margin-bottom: 20px;
+    }
+    .posts-title {
+        padding-bottom: 10px;
     }
     .posts .post {
         margin-bottom: 30px;
         padding-bottom: 30px;
     }
-    .posts-header, .posts .post-header {
+    .posts .post-header {
+        margin-bottom: 15px;
+    }
+    .posts .post-date {
+        font-size: 14px;
+    }
+    /* 存档 */
+    .single .post-header, .page-header {
+        margin-bottom: 50px;
+    }
+    .single .post-title, .page-title {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+    .single .post-meta, .page-meta {
+        font-size: 14px;
+    }
+    .archives .year {
+        font-size: 24px;
         margin-bottom: 20px;
     }
-    .posts .post-title {
+    .archives ul {
+        margin-bottom: 50px;
+    }
+    .archives ul li {
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .tagcloud ul li {
+        margin: 0 10px 20px;
+    }
+    /* 文章 */
+    .post-content p {
+        margin-bottom: 20px;
+    }
+    .post-content h2 {
         font-size: 24px;
     }
-    .posts .post .post-title {
-        margin-bottom: 10px;
+    .post-tags a {
+        font-size: 14px;
     }
     /* 页脚 */
     .footer-inner {
         display: flex;
         align-items: center;
         justify-content: space-between;
+        padding: 80px 0 50px;
     }
-    /* 存档 */
-    .archives, .tagcloud, .post-main, .comments {
-        padding: 0 30px;
-    }
-    .post-meta, .page-meta, .latest .post-footer {
-        margin-top: 20px;
-    }
-    .page-title {
-        font-size: 28px;
-    }
-    .archives .by-year {
-        margin-bottom: 20px;
-        font-size: 28px;
-    }
-    .archives ul {
-        margin-bottom: 50px;
-    }
-    /* 文章 */
-    .single .post-title {
-        font-size: 28px;
-    }
-    .post-title a, .archives ul li a {
-        display: inline-block;
-        position: relative;
-    }
-    .post-title a::before, .archives ul li a::before {
-        content: "";
-        position: absolute;
-        width: 100%;
-        height: 2px;
-        bottom: 0;
-        left: 0;
-        background-color: #000;
-        visibility: hidden;
-        -webkit-transform: scaleX(0);
-        -moz-transform: scaleX(0);
-        -ms-transform: scaleX(0);
-        -o-transform: scaleX(0);
-        transform: scaleX(0);
-        transition-duration: 0.2s;
-        transition-timing-function: ease-in-out;
-        transition-delay: 0s;
-    }
-    .post-title a:hover::before, .archives ul li a:hover::before {
-        visibility: visible;
-        -webkit-transform: scaleX(1);
-        -moz-transform: scaleX(1);
-        -ms-transform: scaleX(1);
-        -o-transform: scaleX(1);
-        transform: scaleX(1);
-    }
-    .comments {
-        margin-top: 50px;
-    }
-    /* 其他 */
-    .backtop {
-        right: 50px;
-        bottom: 50px;
+    .footer-inner p {
+        font-size: 15px;
     }
     /* 搜索 */
     .search-form {
@@ -929,14 +685,23 @@ h1, h2, h3, h4, h5, h6, strong {
         height: 80%;
         border-radius: 5px;
     }
+    .search-header {
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    /* 其他 */
+    .backtop {
+        right: 50px;
+        bottom: 50px;
+    }
 }
 @media screen and (max-width: 768px) {
     /* 通用 */
-    .header-inner, .container, .footer-inner {
-        padding: 10px;
+    .container-inner, .footer-inner {
+        margin: 0 10px;
     }
-    .container {
-        margin-top: 80px;
+    .container-inner {
+        margin-top: 58px;
     }
     /* 页首 */
     .header {
@@ -947,16 +712,15 @@ h1, h2, h3, h4, h5, h6, strong {
         z-index: 9;
         transition: transform 0.4s;
         background-color: #fff;
-        border-bottom: 1px solid #eee;
+        box-shadow: 0 1px 3px 0 rgb(32 33 36 / 28%);
     }
     .hide-header .header {
         transform: translateY(-100%);
+        box-shadow: 0 0 0;
     }
     .header-inner {
         justify-content: center;
-    }
-    .nav {
-        display: none;
+        padding: 6px 0;
     }
     .site-brand {
         margin: 0 auto;
@@ -964,50 +728,66 @@ h1, h2, h3, h4, h5, h6, strong {
     .site-name {
         font-size: 20px;
     }
-    .site-slogan {
+    .site-slogan, .menu {
         display: none;
     }
     .popup-trigger {
         order: -1;
     }
+    .popup-trigger, .menu-trigger {
+        padding: 0 10px;
+    }
     .popup-trigger .genericons, .menu-trigger .genericons {
         font-size: 20px;
-        padding: 0 5px;
     }
     /* 首页 */
     .latest {
         padding: 10px;
-        margin-bottom: 20px;
-    }
-    .latest .post-footer {
-        margin-top: 5px;
-    }
-    .posts-header {
         margin-bottom: 15px;
     }
-    .posts .post {
-        padding-bottom: 15px;
-        margin-bottom: 20px;
+    .latest .post-header {
+        margin-bottom: 10px;
     }
-    .posts .post-title {
-        font-size: 20px;
-    }
-    /* 页脚 */
-    /* 存档 */
-    .post-meta, .page-meta {
+    .latest .post-meta {
+        font-size: 12px;
         margin-top: 5px;
-        margin-bottom: 20px;
     }
+    .latest .post-title, .posts .post-title {
+        font-size: 18px;
+    }
+    .readmore .genericons {
+        font-size: 11px;
+    }
+    .post-excerpt {
+        font-size: 14px;
+    }
+    .posts-header {
+        margin-bottom: 5px;
+    }
+    .posts-title {
+        padding-bottom: 5px;
+    }
+    .posts .post {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    .posts .post-date {
+        font-size: 12px;
+    }
+    /* 存档 */
 
     /* 文章 */
-    .comments {
-        margin-top: 15px;
+    .post-tags a {
+        font-size: 12px;
+    }
+    /* 页脚 */
+    .footer-inner {
+        text-align: center;
+    }
+    .footer-inner p {
+        font-size: 13px;
     }
     /* 其他 */
-    .backtop {
-        right: 20px;
-        bottom: 20px;
-    }
     /* 搜索 */
     .search-form {
         height: 100%;
