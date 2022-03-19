@@ -647,6 +647,7 @@ hr {
 }
 .search-header {
     display: flex;
+    align-items: center;
     padding: 10px;
     line-height: 1.5;
     background-color: #eee;
@@ -687,7 +688,6 @@ hr {
 .result-icon .genericons {
     font-size: 5em;
     color: #ccc;
-    font-weight: 800;
 }
 .search-stats {
     margin-bottom: 10px;
