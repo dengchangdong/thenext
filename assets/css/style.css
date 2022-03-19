@@ -763,7 +763,7 @@ hr {
         margin: 0 auto;
     }
     .site-name {
-        font-size: 18px;
+        font-size: 22px;
     }
     .site-slogan, .menu {
         display: none;
@@ -775,7 +775,7 @@ hr {
         padding: 0 20px;
     }
     .popup-trigger .genericons, .menu-trigger .genericons {
-        font-size: 18px;
+        font-size: 24px;
     }
     /* 首页 */
     .latest {
