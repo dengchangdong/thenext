@@ -470,10 +470,10 @@ hr {
     list-style: none;
 }
 .post-content ol li {
-    padding-left: 28px;
+    padding-left: 24px;
 }
 .post-content ul li {
-    padding-left: 20px;
+    padding-left: 15px;
 }
 .post-content li::before {
     position: absolute;
