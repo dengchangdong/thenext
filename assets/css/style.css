@@ -749,6 +749,7 @@ hr {
         z-index: 9;
         transition: transform 0.4s;
         background-color: #fff;
+        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 10%);
     }
     .hide-header .header {
         transform: translateY(-100%);
