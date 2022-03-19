@@ -876,6 +876,7 @@ hr {
     }
     .popup-trigger .genericons, .menu-trigger .genericons {
         font-size: 20px;
+        font-weight: 800;
     }
     /* 首页 */
     .latest {
@@ -918,7 +919,7 @@ hr {
         margin-bottom: 15px;
     }
     .single .post-title, .page-title {
-        font-size: 20px;
+        font-size: 24px;
     }
     .single .post-meta, .page-meta {
         font-size: 12px;
