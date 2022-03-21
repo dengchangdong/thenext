@@ -988,12 +988,32 @@ hr {
     .menu-active .nav {
         display: block;
         opacity: 1;
-        transition: opacity 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
     }
     .menu-item {
+        position: relative;
+        font-size: 18px;
         text-align: center;
         margin: 15px auto;
-        font-size: 18px;
+        padding-bottom: 15px;
+    }
+    .menu-item:first-child {
+        margin-top: 0;
+    }
+    .menu-item:nth-last-child(2) {
+        margin-bottom: 0;
+        padding-bottom: 0;
+    }
+    .menu-item:not(:nth-last-child(2)):after {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        content: "";
+        height: 1px;
+        width: 70%;
+        margin: 0 auto;
+        border-top: 1px solid #e6e6e6;
     }
     /* 首页 */
     .latest {
