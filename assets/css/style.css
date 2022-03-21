@@ -793,7 +793,7 @@ hr {
     }
     .header-inner {
         justify-content: space-between;
-        padding: 50px 200px 80px;
+        padding: 30px 200px 80px;
     }
     .site-brand {
         display: flex;
