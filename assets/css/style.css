@@ -392,6 +392,11 @@ hr {
     filter: blur(5px);
     padding-bottom: 56.25%;
 }
+.post-content img {
+    border: 1px solid #e6e6e6;
+    padding: 5px;
+    box-sizing: border-box;
+}
 .post-content h2, .post-content h3, .post-content h4, .post-content h5 {
     margin: 40px auto 20px;
 }
@@ -465,6 +470,7 @@ hr {
     margin: 20px 0;
     padding: 15px 15px 15px 50px;
     font-size: 14px;
+    border-radius: 3px;
     background-color: #f2f2f2;
 }
 .post-content blockquote:before {
