@@ -951,7 +951,7 @@ hr {
     /* 首页 */
     .latest {
         padding: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     .latest .post-header {
         margin-bottom: 10px;
@@ -970,7 +970,7 @@ hr {
         font-size: 14px;
     }
     .posts-header {
-        margin-bottom: 5px;
+        margin-bottom: 10px;
     }
     .posts-title {
         padding-bottom: 5px;
@@ -1000,7 +1000,7 @@ hr {
     /* 页脚 */
     .footer-inner {
         text-align: center;
-        padding: 15px 0;
+        padding: 20px 0 30px;
     }
     .footer-inner p {
         font-size: 13px;
