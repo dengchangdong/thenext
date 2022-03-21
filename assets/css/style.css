@@ -964,7 +964,7 @@ hr {
     .site-name {
         font-size: 18px;
     }
-    .site-slogan, .nav {
+    .site-slogan, .nav, .search-click {
         display: none;
     }
     .popup-trigger {
@@ -977,11 +977,21 @@ hr {
         font-size: 20px;
         font-weight: 800;
     }
-    .menu-active .nav {
-        display: block;
+    .nav {
         position: fixed;
         left: 0;
         right: 0;
+        background-color: #fff;
+        transition: all 0.5s ease-out;
+    }
+    .menu-active .nav {
+        display: block;
+        transform: translate3d(0, 0, 0);
+    }
+    .menu-item {
+        text-align: center;
+        margin: 10px auto;
+        font-size: 18px;
     }
     /* 首页 */
     .latest {
