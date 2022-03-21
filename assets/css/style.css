@@ -384,7 +384,7 @@ hr {
     text-align: center;
 }
 .post-content h2, .post-content h3, .post-content h4, .post-content h5 {
-    margin: 1em auto .5em;
+    margin: 40px auto 20px;
 }
 .post-content p {
     margin: 20px auto;
