@@ -329,7 +329,6 @@ hr {
 >>> 首页:
 --------------------------------------------------------------*/
 .latest {
-    border-radius: 8px;
     background: linear-gradient(315deg, #efefef, #fafafa);
 }
 .latest .post-date {
@@ -646,7 +645,7 @@ hr {
 /*--------------------------------------------------------------
 >>> 搜索:
 --------------------------------------------------------------*/
-.search-active {
+.search-active, .menu-active {
     overflow: hidden;
 }
 .search-popup {
@@ -830,6 +829,7 @@ hr {
     .latest {
         padding: 30px;
         margin-bottom: 60px;
+        border-radius: 8px;
     }
     .latest .post-header {
         margin-bottom: 20px;
@@ -922,6 +922,15 @@ hr {
         bottom: 50px;
     }
 }
+@media screen and (max-width: 820px) {
+    .header-inner {
+        justify-content: space-between;
+        padding: 30px 30px 50px;
+    }
+    .site-slogan {
+        display: none;
+    }
+}
 @media screen and (max-width: 768px) {
     /* 通用 */
     .container-inner, .footer-inner {
@@ -955,7 +964,7 @@ hr {
     .site-name {
         font-size: 18px;
     }
-    .site-slogan, .menu {
+    .site-slogan, .nav {
         display: none;
     }
     .popup-trigger {
@@ -967,6 +976,12 @@ hr {
     .popup-trigger .genericons, .menu-trigger .genericons {
         font-size: 20px;
         font-weight: 800;
+    }
+    .menu-active .nav {
+        display: block;
+        position: fixed;
+        left: 0;
+        right: 0;
     }
     /* 首页 */
     .latest {
