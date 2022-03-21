@@ -569,10 +569,15 @@ hr {
     margin-bottom: 0;
     padding-bottom: 0;
 }
+.archives ul li a {
+    display: inline-block;
+    max-width: 85%;
+}
 .archives .post-date {
     float: right;
     color: #d5d5d5;
 }
+
 .tagcloud ul li {
     display: inline-block;
 }
