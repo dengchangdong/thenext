@@ -383,6 +383,15 @@ hr {
 .single .post-header {
     text-align: center;
 }
+.single img.lazyload {
+    position: relative;
+    transition: filter 400ms ease-in .25s;
+}
+.single img.lazyload:not(.loaded) {
+    -webkit-filter: blur(5px);
+    filter: blur(5px);
+    padding-bottom: 56.25%;
+}
 .post-content h2, .post-content h3, .post-content h4, .post-content h5 {
     margin: 40px auto 20px;
 }
