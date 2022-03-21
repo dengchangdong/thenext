@@ -558,6 +558,8 @@ hr {
     color: #21a81d;
 }
 .archives ul li {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
     border-bottom: 1px dashed #e6e6e6;
 }
 .archives ul:last-child {
@@ -576,8 +578,8 @@ hr {
     float: right;
     color: #d5d5d5;
 }
-
 .tagcloud ul li {
+    margin: 0 10px 20px;
     display: inline-block;
 }
 .single .post-meta, .page-meta {
@@ -883,12 +885,7 @@ hr {
         margin-bottom: 50px;
     }
     .archives ul li {
-        margin-bottom: 20px;
-        padding-bottom: 10px;
         font-size: 18px;
-    }
-    .tagcloud ul li {
-        margin: 0 10px 20px;
     }
     /* 文章 */
     .post-content h2 {
@@ -1052,7 +1049,12 @@ hr {
         font-size: 12px;
     }
     /* 存档 */
-
+    .archives .year {
+        margin-bottom: 10px;
+    }
+    .archives ul {
+        margin-bottom: 30px;
+    }
     /* 文章 */
     .single .post-header, .page-header {
         margin-bottom: 15px;
