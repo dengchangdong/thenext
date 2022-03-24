@@ -401,15 +401,6 @@ hr {
     margin: 40px auto 20px;
     font-weight: 600;
 }
-.post-content h2 {
-    font-size: 24px;
-}
-.post-content h3 {
-    font-size: 20px;
-}
-.post-content h4, .post-content h5 {
-    font-size: 18px;
-}
 .post-content p {
     margin: 20px auto;
     text-align: justify;
@@ -896,6 +887,12 @@ hr {
     .post-content h2 {
         font-size: 24px;
     }
+    .post-content h3 {
+        font-size: 20px;
+    }
+    .post-content h4, .post-content h5 {
+        font-size: 18px;
+    }
     .post-tags a {
         font-size: 14px;
     }
@@ -1069,6 +1066,15 @@ hr {
     }
     .single .post-meta, .page-meta {
         font-size: 12px;
+    }
+    .post-content h2 {
+        font-size: 20px;
+    }
+    .post-content h3 {
+        font-size: 18px;
+    }
+    .post-content h4, .post-content h5 {
+        font-size: 16px;
     }
     .post-tags a {
         font-size: 12px;
