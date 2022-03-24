@@ -399,6 +399,7 @@ hr {
 }
 .post-content h2, .post-content h3, .post-content h4, .post-content h5 {
     margin: 40px auto 20px;
+    font-weight: 600;
 }
 .post-content h2 {
     font-size: 24px;
@@ -606,7 +607,7 @@ hr {
     width: 100%;
     margin: 0;
 }
-.highlight table td,.highlight table th,.highlight table tr {
+.highlight table td, .highlight table th, .highlight table tr {
     border: 0;
     padding: 0;
     box-sizing: border-box;
