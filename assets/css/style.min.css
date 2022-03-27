@@ -467,9 +467,22 @@ hr {
     z-index: 9;
     height: 100%;
     width: 100%;
-    background: rgba(0,0,0,0);
+    background-colpr: rgba(0, 0, 0, 0);
     visibility: hidden;
     transition: visibility 0.4s, background 0.4s;
+}
+.search-active .search-popup {
+    visibility: visible;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.search-active .search-form {
+    transform: scale(1);
+}
+.search-form {
+    margin: auto;
+    transform: scale(0);
+    transition: transform 0.4s;
+    background-color: #f5f7f9;
 }
 /*--------------------------------------------------------------
 >>> 其他:
@@ -631,6 +644,21 @@ hr {
     .popup-trigger {
         order: -1;
     }
+    .menu-active .nav {
+	    display: block;
+	    opacity: 1;
+	    transition: all 0.5s ease-in-out;
+	}
+	.menu-item {
+	    position: relative;
+	    font-size: 18px;
+	    text-align: center;
+	    margin: 15px auto;
+	    padding-bottom: 15px;
+	}
+	.menu-item:first-child {
+	    margin-top: 0;
+	}
     /* 首页 */
     .latest {
         padding: 20px;
