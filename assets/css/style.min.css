@@ -309,6 +309,9 @@ hr {
     display: flex;
     align-items: center;
 }
+.site-name {
+	font-weight: 600;
+}
 .site-slogan {
     position: relative;
     margin-left: 20px;
@@ -546,7 +549,7 @@ hr {
     .container-inner, .footer-inner {
         width: 720px;
     }
-    .posts, .archives, .tagcloud, .post-main {
+    .posts, .archives, .tagcloud, .post-main, .comments {
         padding: 0 30px;
     }
     /* 页首 */
@@ -612,7 +615,7 @@ hr {
 }
 @media screen and (max-width: 767px) {
     /* 通用 */
-    .posts, .archives, .tagcloud, .post-main {
+    .posts, .archives, .tagcloud, .post-main, .comments {
         margin: auto 20px;
     }
     .is_archive .container, .is_single .container {
