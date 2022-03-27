@@ -549,7 +549,7 @@ hr {
     .container-inner, .footer-inner {
         width: 720px;
     }
-    .posts, .archives, .tagcloud, .post-main, .comments {
+    .posts, .archives, .tagcloud, .single, .comments {
         padding: 0 30px;
     }
     /* 页首 */
@@ -615,7 +615,7 @@ hr {
 }
 @media screen and (max-width: 767px) {
     /* 通用 */
-    .posts, .archives, .tagcloud, .post-main, .comments {
+    .posts, .archives, .tagcloud, .single, .comments {
         margin: auto 20px;
     }
     .is_archive .container, .is_single .container {
