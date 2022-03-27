@@ -310,7 +310,7 @@ hr {
     align-items: center;
 }
 .site-name {
-	font-weight: 600;
+    font-weight: 600;
 }
 .site-slogan {
     position: relative;
@@ -648,27 +648,27 @@ hr {
         order: -1;
     }
     .menu-active .nav {
-	    display: block;
-	    opacity: 1;
-	    transition: all 0.5s ease-in-out;
-	}
-	.menu-item {
-	    position: relative;
-	    font-size: 18px;
-	    text-align: center;
-	    margin: 15px auto;
-	    padding-bottom: 15px;
-	}
-	.menu-item:first-child {
-	    margin-top: 0;
-	}
+        display: block;
+        opacity: 1;
+        transition: all 0.5s ease-in-out;
+    }
+    .menu-item {
+        position: relative;
+        font-size: 18px;
+        text-align: center;
+        margin: 15px auto;
+        padding-bottom: 15px;
+    }
+    .menu-item:first-child {
+        margin-top: 0;
+    }
     /* 首页 */
     .latest {
         padding: 20px;
         margin-bottom: 20px;
     }
     .latest .post-title {
-        font-size: 18px;
+        font-size: 20px;
     }
     .posts-header {
         margin-bottom: 15px;
@@ -681,7 +681,7 @@ hr {
         padding-bottom: 5px;
     }
     .posts .post-title {
-        font-size: 16px;
+        font-size: 18px;
     }
     /* 存档 */
     /* 文章 */
