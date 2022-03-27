@@ -619,10 +619,10 @@ hr {
         margin: auto 20px;
     }
     .is_archive .container, .is_single .container {
-        margin-top: 80px;
+        margin-top: 76px;
     }
     .is_home .container {
-        margin-top: 56px;
+        margin-top: 52px;
     }
     /* 页首 */
     .header {
