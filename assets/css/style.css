@@ -295,6 +295,9 @@ hr {
 /*--------------------------------------------------------------
 >>> 通用:
 --------------------------------------------------------------*/
+.container-inner, .footer-inner {
+    margin: 0 auto;
+}
 .sep {
     margin: 0 3px;
 }
@@ -934,11 +937,20 @@ hr {
 }
 @media screen and (max-width: 768px) {
     /* 通用 */
-    .container-inner, .footer-inner {
+    .is_archive .container-inner, 
+    .is_single .container-inner, 
+    .footer-inner {
         margin: 0 20px;
     }
-    .container-inner {
+    .is_archive .container-inner, 
+    .is_single .container-inner {
         margin-top: 80px;
+    }
+    .is_home .container-inner {
+        margin-top: 56px;
+    }
+    .is_home .posts {
+        margin: auto 20px;
     }
     /* 页首 */
     .header {
@@ -1018,7 +1030,7 @@ hr {
     }
     /* 首页 */
     .latest {
-        padding: 10px;
+        padding: 20px;
         margin-bottom: 20px;
     }
     .latest .post-header {
