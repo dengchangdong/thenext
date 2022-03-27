@@ -355,6 +355,9 @@ hr {
 .latest .post-header {
     margin-bottom: 10px;
 }
+.latest .post-title {
+    font-size: 20px;
+}
 .latest .post-meta {
     display: flex;
     align-items: center;
@@ -389,6 +392,9 @@ hr {
     width: 100%;
     z-index: 5;
     background-color: #333;
+}
+.posts .post-title {
+    font-size: 18px;
 }
 .post-excerpt p {
     font-size: 14px;
@@ -575,9 +581,6 @@ hr {
         padding: 30px;
         border-radius: 5px;
     }
-    .latest .post-title {
-        font-size: 20px;
-    }
     .posts-header {
         margin-bottom: 20px
     }
@@ -597,7 +600,6 @@ hr {
     }
     .posts .post-title {
         max-width: 85%;
-        font-size: 18px;
     }
     /* 文章 */
     .single .post-header, .page-header {
@@ -667,9 +669,6 @@ hr {
         padding: 20px;
         margin-bottom: 20px;
     }
-    .latest .post-title {
-        font-size: 20px;
-    }
     .posts-header {
         margin-bottom: 15px;
     }
@@ -679,9 +678,6 @@ hr {
     }
     .posts-title {
         padding-bottom: 5px;
-    }
-    .posts .post-title {
-        font-size: 18px;
     }
     /* 存档 */
     /* 文章 */
