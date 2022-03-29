@@ -1042,10 +1042,10 @@ hr {
 @media screen and (max-width: 767px) {
     /* 通用 */
     .container {
-        margin-top: 72px;
+        margin-top: 76px;
     }
     .is_home .container {
-        margin-top: 52px;
+        margin-top: 56px;
     }
     .posts, .archives, .tagcloud, .single, .comments {
         padding: 0 20px;
@@ -1077,8 +1077,8 @@ hr {
     .popup-trigger .genericons, 
     .menu-trigger .genericons {
         padding: 0 10px;
-        font-size: 18px;
-        font-weight: 800;
+        font-size: 20px;
+        font-weight: 600;
     }
     .nav {
         position: fixed;
@@ -1129,7 +1129,7 @@ hr {
         margin-top: 10px;
     }
     .posts-header {
-        margin-bottom: 10px;
+        margin-bottom: 15px;
     }
     .posts-title {
         padding-bottom: 5px;
