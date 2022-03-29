@@ -1042,7 +1042,7 @@ hr {
 @media screen and (max-width: 767px) {
     /* 通用 */
     .container {
-        margin-top: 65px;
+        margin-top: 72px;
     }
     .is_home .container {
         margin-top: 52px;
