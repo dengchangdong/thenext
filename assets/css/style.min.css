@@ -297,6 +297,9 @@ hr {
 .header-inner, .container-inner, .footer-inner {
     margin: 0 auto;
 }
+.search-active, .menu-active {
+    overflow: hidden;
+}
 /*--------------------------------------------------------------
 >>> 页首:
 --------------------------------------------------------------*/
@@ -407,6 +410,9 @@ hr {
 /*--------------------------------------------------------------
 >>> 文章:
 --------------------------------------------------------------*/
+.sep {
+    margin: 0 3px;
+}
 .post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
     margin-top: 30px;
     margin-bottom: 15px;
@@ -429,10 +435,6 @@ hr {
 }
 .post-content p:last-child {
     margin-bottom: 0;
-}
-.post-content img {
-    padding: 10px;
-    border: 1px solid #eee;
 }
 .post-content sup {
     margin-left: 3px;
@@ -479,10 +481,10 @@ hr {
     list-style: none;
 }
 .post-content ol li {
-    padding-left: 32px;
+    padding-left: 30px;
 }
 .post-content ul li {
-    padding-left: 20px;
+    padding-left: 15px;
 }
 .post-content li::before {
     position: absolute;
@@ -772,39 +774,44 @@ hr {
 .search-active .search-form {
     transform: scale(1);
 }
-.search-form .search-header {
+.search-header {
     display: flex;
     align-items: center;
-    padding: 10px;
+    padding: 15px 10px;
     line-height: 1.5;
     background-color: #eee;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
-.search-form .search-icon, 
-.search-form .search-close {
+.search-icon .genericons, 
+.search-close .genericons,
+.local-search-input {
+    font-size: 18px;
+    line-height: 1;
+}
+.search-icon, 
+.search-close {
     padding: 0 10px;
 }
-.search-form .search-close {
+.local-search-input {
+    width: 100%;
+}
+.search-close {
     cursor: pointer;
     color: #999;
 }
-.search-form .search-close:hover {
+.search-close:hover {
     color: #000;
 }
-.search-form .search-input {
+.search-input {
     flex-grow: 1;
 }
-.search-form .local-search-input {
-    width: 100%;
-    line-height: 30px;
-}
-.search-form .search-result {
-    height: calc(100% - 55px);
+.search-result {
+    height: calc(100% - 69px);
     overflow: auto;
-    padding: 5px 25px;
+    padding: 5px 20px;
 }
-.search-form .no-result {
+.no-result {
     display: flex;
 }
 .result-icon {
@@ -815,6 +822,27 @@ hr {
     font-size: 5em;
     color: #ccc;
     font-weight: 800;
+}
+.search-stats {
+    margin: 10px auto;
+    font-size: 13px;
+    color: #666;
+}
+.result-list {
+    margin: 20px auto;
+    list-style-type: none;
+}
+.result-list li {
+    margin-bottom: 20px;
+}
+.result-list li a {
+    font-size: 18px;
+    font-weight: 600;
+}
+.result-list li em {
+    font-style: normal;
+    color: #ff5c38;
+    font-weight: 600;
 }
 /*--------------------------------------------------------------
 >>> 其他:
@@ -832,8 +860,11 @@ hr {
     box-shadow: rgb(0 0 0 / 24%) 0px 8px 16px -2px;
 }
 /*--------------------------------------------------------------
->>> Disqus:
+>>> 评论:
 --------------------------------------------------------------*/
+.comments {
+    margin-top: 20px;
+}
 #disqus_bookmarksations {
     margin: 0!important;
 }
@@ -991,6 +1022,10 @@ hr {
         border-radius: 5px;
     }
     /* 其他 */
+    .backtop {
+        right: 40px;
+        bottom: 40px;
+    }
     /* 页脚 */
     .footer-inner {
         display: flex;
@@ -1001,14 +1036,65 @@ hr {
 }
 @media screen and (max-width: 767px) {
     /* 通用 */
+    .container {
+        margin-top: 65px;
+    }
+    .is_home .container {
+        margin-top: 52px;
+    }
+    .posts, .archives, .tagcloud, .single, .comments {
+        padding: 0 20px;
+    }
     /* 页首 */
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 9;
+        transition: transform 0.4s;
+        background-color: #fff;
+        box-shadow: 0 1px 2px 0 rgb(32 33 36 / 10%);
+    }
+    .header-inner {
+        padding: 10px;
+    }
+    .site-name {
+        font-size: 18px;
+        font-weight: 400;
+    }
     .site-slogan, .nav {
         display: none;
     }
     .popup-trigger {
         order: -1;
     }
+    .popup-trigger .genericons, 
+    .menu-trigger .genericons {
+        font-size: 18px;
+        padding: 0 10px;
+    }
     /* 首页 */
+    .latest {
+        padding: 20px;
+        margin-bottom: 20px;
+    }
+    .latest .post-header {
+        margin-bottom: 10px;
+    }
+    .latest .post-meta {
+        margin-top: 10px;
+    }
+    .posts-header {
+        margin-bottom: 10px;
+    }
+    .posts-title {
+        padding-bottom: 5px;
+    }
+    .posts .post {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
     /* 存档 */
     /* 文章 */
     /* 搜索 */
@@ -1017,5 +1103,12 @@ hr {
         width: 100%;
     }
     /* 其他 */
+    .backtop {
+        right: 20px;
+        bottom: 20px;
+    }
     /* 页脚 */
+    .footer-inner {
+        padding: 20px 0;
+    }
 }
