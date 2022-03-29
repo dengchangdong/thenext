@@ -829,13 +829,15 @@ hr {
     color: #666;
 }
 .result-list {
-    margin: 20px auto;
+    margin-bottom: 20px;
     list-style-type: none;
 }
 .result-list li {
     margin-bottom: 20px;
 }
 .result-list li a {
+    display: block;
+    margin-bottom: 10px;
     font-size: 18px;
     font-weight: 600;
 }
