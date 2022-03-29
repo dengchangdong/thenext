@@ -13,7 +13,7 @@ $(function() {
     // Menu toggle
     menuTrigger.click(function() {
         body.toggleClass("menu-active").removeClass("search-active");
-        menu.css({"top": (header.outerHeight() - 1)});
+        menu.css({"top": header.outerHeight()});
     }); 
 
     // Search toggle

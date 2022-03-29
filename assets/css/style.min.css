@@ -1073,8 +1073,9 @@ hr {
     }
     .popup-trigger .genericons, 
     .menu-trigger .genericons {
-        font-size: 18px;
         padding: 0 10px;
+        font-size: 18px;
+        font-weight: 800;
     }
     .nav {
         position: fixed;
@@ -1135,6 +1136,15 @@ hr {
         padding-bottom: 10px;
     }
     /* 存档 */
+    .page-header, .single .post-header {
+        margin-bottom: 20px;
+    }
+    .archives .year {
+        margin-bottom: 10px;
+    }
+    .archives ul {
+        margin-bottom: 30px;
+    }
     /* 文章 */
     /* 搜索 */
     .search-form {
