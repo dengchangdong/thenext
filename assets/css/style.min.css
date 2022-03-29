@@ -403,9 +403,14 @@ hr {
     font-size: 15px;
     color: #666;
 }
-.latest .post-date, .posts .post-date, .single .post-meta, .page-meta {
+.latest .post-date, .posts .post-date, 
+.single .post-meta, .page-meta {
     font-size: 13px;
     color: #999;
+}
+.post-excerpt p, .post-content p {
+    text-align: justify;
+    word-wrap: break-word;
 }
 /*--------------------------------------------------------------
 >>> 文章:
@@ -413,7 +418,8 @@ hr {
 .sep {
     margin: 0 3px;
 }
-.post-content h2, .post-content h3, .post-content h4, .post-content h5, .post-content h6 {
+.post-content h2, .post-content h3, .post-content h4, 
+.post-content h5, .post-content h6 {
     margin-top: 30px;
     margin-bottom: 15px;
 }
@@ -786,11 +792,13 @@ hr {
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+.search-icon, .search-close, .local-search-input {
+    line-height: 24px;
+}
 .search-icon .genericons, 
 .search-close .genericons,
 .local-search-input {
     font-size: 18px;
-    line-height: 1;
 }
 .search-icon, 
 .search-close {
