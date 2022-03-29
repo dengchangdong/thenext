@@ -615,6 +615,9 @@ hr {
 .archives .year {
     font-size: 20px;
 }
+.tagcloud ul {
+    text-align: center;
+}
 .tagcloud ul li {
     margin: 0 10px 20px;
     display: inline-block;
