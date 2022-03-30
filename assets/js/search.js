@@ -79,13 +79,13 @@ var searchFunc = function(path, search_id, content_id) {
                         var content = data.content.trim().replace(/<[^>]+>/g,"");
                         if (first_occur >= 0) {
                             // cut out 100 characters
-                            var start = first_occur - 20;
-                            var end = first_occur + 40;
+                            var start = first_occur - 10;
+                            var end = first_occur + 20;
                             if(start < 0){
                                 start = 0;
                             }
                             if(start == 0){
-                                end = 60;
+                                end = 30;
                             }
                             if(end > content.length){
                                 end = content.length;
