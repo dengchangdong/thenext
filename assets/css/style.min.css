@@ -446,6 +446,9 @@ hr {
     margin-left: 3px;
     margin-right: 5px;
 }
+.post-content sup a {
+    color: #ff5c38;
+}
 .post-content sup a:before {
     content: "[";
 }
