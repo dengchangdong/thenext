@@ -432,8 +432,11 @@ hr {
 .post-content h4, .post-content h5, .post-content h6 {
     font-size: 16px;
 }
-.post-content a {
-    color: #000;
+.post-content :not(sup) a {
+    color: #338de6;
+}
+.post-content :not(sup) a:hover {
+    color: #136ec2;
     text-decoration: underline;
 }
 .post-content p {
