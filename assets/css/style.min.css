@@ -433,17 +433,8 @@ hr {
     font-size: 16px;
 }
 .post-content a {
-    display: inline-block;
-    position: relative;
-}
-.post-content a:after {
-    position: absolute;
-    content: "";
-    width: 100%;
-    height: 1px;
-    bottom: 0;
-    left: 0;
-    background-color: #333;
+    color: #000;
+    text-decoration: underline;
 }
 .post-content p {
     line-height: 2;
@@ -461,6 +452,7 @@ hr {
 }
 .post-content sup a {
     color: #ff5c38;
+    text-decoration: none;
 }
 .post-content sup a:before {
     content: "[";
