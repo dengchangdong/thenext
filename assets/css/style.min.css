@@ -578,7 +578,7 @@ hr {
     margin-right: 3px;
 }
 .post-tags a:hover {
-    color: #fc6423;
+    color: #000;
 }
 /*--------------------------------------------------------------
 >>> 存档:
@@ -1096,7 +1096,6 @@ hr {
         padding: 30px 0;
         visibility: hidden;
         background-color: #fff;
-        border-top: 1px solid #e6e6e6;
     }
     .menu-active .nav {
         visibility: visible;
