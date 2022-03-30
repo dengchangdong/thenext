@@ -432,14 +432,14 @@ hr {
 .post-content h4, .post-content h5, .post-content h6 {
     font-size: 16px;
 }
-.post-content a:not([rel~="footnote"]) {
+.post-content a:not([rel~="footnote"]):not([rev~="footnote"]) {
     position: relative;
     color: #656c7a;
 }
-.post-content a:not([rel~="footnote"]):hover {
+.post-content a:not([rel~="footnote"]):not([rev~="footnote"]):hover {
     color: #000;
 }
-.post-content a:not([rel~="footnote"]):after {
+.post-content a:not([rel~="footnote"]):not([rev~="footnote"]):after {
     position: absolute;
     content: "";
     width: 100%;
@@ -448,7 +448,7 @@ hr {
     left: 0;
     background-color: #656c7a;
 }
-.post-content a:not([rel~="footnote"]):after:hover {
+.post-content a:not([rel~="footnote"]):not([rev~="footnote"]):after:hover {
     background-color: #000;
 }
 .post-content p {
