@@ -899,19 +899,10 @@ hr {
 >>> 评论:
 --------------------------------------------------------------*/
 .comments {
-    margin-top: 20px;
+    margin-top: 30px;
 }
-#disqus_bookmarksations {
-    margin: 0!important;
-}
-#dsqjs #dsqjs-msg {
-    margin-top: 0!important;
-}
-#dsqjs footer {
-    display: none;
-}
-#disqus_recommendations {
-    margin-bottom: 0!important;
+.vpower {
+    display: none!important;
 }
 /*--------------------------------------------------------------
 >>> 自适应:
