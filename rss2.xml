@@ -4,9 +4,9 @@
   xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <title>懒人杂记</title>
-    <link>https://www.thenext.cc/</link>
+    <link>https://i.thenext.cc/</link>
     
-    <atom:link href="https://www.thenext.cc/rss2.xml" rel="self" type="application/rss+xml"/>
+    <atom:link href="https://i.thenext.cc/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>人生最大的梦想就是像猪一样的活着</description>
     <pubDate>Wed, 30 Mar 2022 11:23:23 GMT</pubDate>
@@ -14,8 +14,8 @@
     
     <item>
       <title>HTTPS 常见部署问题及解决方案</title>
-      <link>https://www.thenext.cc/post/dc537aac.html</link>
-      <guid>https://www.thenext.cc/post/dc537aac.html</guid>
+      <link>https://i.thenext.cc/post/dc537aac.html</link>
+      <guid>https://i.thenext.cc/post/dc537aac.html</guid>
       <pubDate>Mon, 14 Mar 2022 12:17:59 GMT</pubDate>
       
       <description>&lt;p&gt;隶属于日本和中国多个机构的联合团队发现了大约7000 年前在中国驯化鹅的证据。在他们发表在《美国国家科学院院刊》上的论文中，团队描述了他们对在中国东部挖掘地点——田螺山——发现的鹅骨的分析报告。&lt;/p&gt;</description>
@@ -24,21 +24,21 @@
       
       
       
-      <category domain="https://www.thenext.cc/tag/HTML5.html">HTML5</category>
+      <category domain="https://i.thenext.cc/tag/HTML5.html">HTML5</category>
       
-      <category domain="https://www.thenext.cc/tag/前端.html">前端</category>
+      <category domain="https://i.thenext.cc/tag/前端.html">前端</category>
       
-      <category domain="https://www.thenext.cc/tag/互联网.html">互联网</category>
+      <category domain="https://i.thenext.cc/tag/互联网.html">互联网</category>
       
       
-      <comments>https://www.thenext.cc/post/dc537aac.html#disqus_thread</comments>
+      <comments>https://i.thenext.cc/post/dc537aac.html#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>西方的证书机构拒绝为俄罗斯域名颁发 HTTPS 证书</title>
-      <link>https://www.thenext.cc/post/e07ace10.html</link>
-      <guid>https://www.thenext.cc/post/e07ace10.html</guid>
+      <link>https://i.thenext.cc/post/e07ace10.html</link>
+      <guid>https://i.thenext.cc/post/e07ace10.html</guid>
       <pubDate>Mon, 14 Mar 2022 12:09:17 GMT</pubDate>
       
       <description>&lt;p&gt;上周，国外网友发现，一家西方的证书机构拒绝为俄罗斯域名颁发 HTTPS 证书，甚至还吊销已经颁发的有效证书。&lt;/p&gt;</description>
@@ -47,21 +47,21 @@
       
       
       
-      <category domain="https://www.thenext.cc/tag/HTML5.html">HTML5</category>
+      <category domain="https://i.thenext.cc/tag/HTML5.html">HTML5</category>
       
-      <category domain="https://www.thenext.cc/tag/前端.html">前端</category>
+      <category domain="https://i.thenext.cc/tag/前端.html">前端</category>
       
-      <category domain="https://www.thenext.cc/tag/互联网.html">互联网</category>
+      <category domain="https://i.thenext.cc/tag/互联网.html">互联网</category>
       
       
-      <comments>https://www.thenext.cc/post/e07ace10.html#disqus_thread</comments>
+      <comments>https://i.thenext.cc/post/e07ace10.html#disqus_thread</comments>
       
     </item>
     
     <item>
       <title>多地发布建筑业清退令，超龄农民工路在何方</title>
-      <link>https://www.thenext.cc/post/e8cf9b8e.html</link>
-      <guid>https://www.thenext.cc/post/e8cf9b8e.html</guid>
+      <link>https://i.thenext.cc/post/e8cf9b8e.html</link>
+      <guid>https://i.thenext.cc/post/e8cf9b8e.html</guid>
       <pubDate>Sun, 31 Oct 2021 07:45:33 GMT</pubDate>
       
       <description>&lt;p&gt;超龄农民工正在逐步告别建筑工地。截至目前，全国已有多个地区发文进一步规范建筑施工企业用工年龄管理。&lt;/p&gt;</description>
@@ -70,14 +70,14 @@
       
       
       
-      <category domain="https://www.thenext.cc/tag/HTML5.html">HTML5</category>
+      <category domain="https://i.thenext.cc/tag/HTML5.html">HTML5</category>
       
-      <category domain="https://www.thenext.cc/tag/前端.html">前端</category>
+      <category domain="https://i.thenext.cc/tag/前端.html">前端</category>
       
-      <category domain="https://www.thenext.cc/tag/互联网.html">互联网</category>
+      <category domain="https://i.thenext.cc/tag/互联网.html">互联网</category>
       
       
-      <comments>https://www.thenext.cc/post/e8cf9b8e.html#disqus_thread</comments>
+      <comments>https://i.thenext.cc/post/e8cf9b8e.html#disqus_thread</comments>
       
     </item>
     

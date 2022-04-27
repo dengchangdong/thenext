@@ -3,11 +3,11 @@
   <title>懒人杂记</title>
   
   
-  <link href="https://www.thenext.cc/atom.xml" rel="self"/>
+  <link href="https://i.thenext.cc/atom.xml" rel="self"/>
   
-  <link href="https://www.thenext.cc/"/>
+  <link href="https://i.thenext.cc/"/>
   <updated>2022-03-30T11:23:23.972Z</updated>
-  <id>https://www.thenext.cc/</id>
+  <id>https://i.thenext.cc/</id>
   
   <author>
     <name>烟鬼大叔</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>HTTPS 常见部署问题及解决方案</title>
-    <link href="https://www.thenext.cc/post/dc537aac.html"/>
-    <id>https://www.thenext.cc/post/dc537aac.html</id>
+    <link href="https://i.thenext.cc/post/dc537aac.html"/>
+    <id>https://i.thenext.cc/post/dc537aac.html</id>
     <published>2022-03-14T12:17:59.703Z</published>
     <updated>2022-03-30T11:23:23.972Z</updated>
     
@@ -29,18 +29,18 @@
     
     
     
-    <category term="HTML5" scheme="https://www.thenext.cc/tag/HTML5.html"/>
+    <category term="HTML5" scheme="https://i.thenext.cc/tag/HTML5.html"/>
     
-    <category term="前端" scheme="https://www.thenext.cc/tag/前端.html"/>
+    <category term="前端" scheme="https://i.thenext.cc/tag/前端.html"/>
     
-    <category term="互联网" scheme="https://www.thenext.cc/tag/互联网.html"/>
+    <category term="互联网" scheme="https://i.thenext.cc/tag/互联网.html"/>
     
   </entry>
   
   <entry>
     <title>西方的证书机构拒绝为俄罗斯域名颁发 HTTPS 证书</title>
-    <link href="https://www.thenext.cc/post/e07ace10.html"/>
-    <id>https://www.thenext.cc/post/e07ace10.html</id>
+    <link href="https://i.thenext.cc/post/e07ace10.html"/>
+    <id>https://i.thenext.cc/post/e07ace10.html</id>
     <published>2022-03-14T12:09:17.567Z</published>
     <updated>2022-03-21T01:07:09.533Z</updated>
     
@@ -50,18 +50,18 @@
     
     
     
-    <category term="HTML5" scheme="https://www.thenext.cc/tag/HTML5.html"/>
+    <category term="HTML5" scheme="https://i.thenext.cc/tag/HTML5.html"/>
     
-    <category term="前端" scheme="https://www.thenext.cc/tag/前端.html"/>
+    <category term="前端" scheme="https://i.thenext.cc/tag/前端.html"/>
     
-    <category term="互联网" scheme="https://www.thenext.cc/tag/互联网.html"/>
+    <category term="互联网" scheme="https://i.thenext.cc/tag/互联网.html"/>
     
   </entry>
   
   <entry>
     <title>多地发布建筑业清退令，超龄农民工路在何方</title>
-    <link href="https://www.thenext.cc/post/e8cf9b8e.html"/>
-    <id>https://www.thenext.cc/post/e8cf9b8e.html</id>
+    <link href="https://i.thenext.cc/post/e8cf9b8e.html"/>
+    <id>https://i.thenext.cc/post/e8cf9b8e.html</id>
     <published>2021-10-31T07:45:33.338Z</published>
     <updated>2022-03-30T11:22:39.597Z</updated>
     
@@ -71,11 +71,11 @@
     
     
     
-    <category term="HTML5" scheme="https://www.thenext.cc/tag/HTML5.html"/>
+    <category term="HTML5" scheme="https://i.thenext.cc/tag/HTML5.html"/>
     
-    <category term="前端" scheme="https://www.thenext.cc/tag/前端.html"/>
+    <category term="前端" scheme="https://i.thenext.cc/tag/前端.html"/>
     
-    <category term="互联网" scheme="https://www.thenext.cc/tag/互联网.html"/>
+    <category term="互联网" scheme="https://i.thenext.cc/tag/互联网.html"/>
     
   </entry>
   
